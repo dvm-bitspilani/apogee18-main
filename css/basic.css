@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', arial, verdana;
     list-style: none;
     /* font-style: italic; */
 }
@@ -38,7 +38,7 @@ header ul , footer ul{
     color: #fff;
     list-style-type: none;
     flex-grow: 0;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 100;
     flex-wrap: wrap;
     max-width: calc(100% - 147px);
@@ -88,6 +88,7 @@ header ul li, footer ul li {
     cursor: pointer;
     transition: all 1s linear;
     position: relative;
+    padding: 0;
 }
 #content {
     width: 100%;
@@ -96,7 +97,7 @@ header ul li, footer ul li {
 }
 
 header ul li:hover, footer ul li:hover{
-    transform: translateY(2px);
+    /*transform: translateY(2px);*/
 }
 
 header ul li:before, footer ul li:before {
@@ -110,8 +111,63 @@ header ul li:before, footer ul li:before {
     background: #fff;
 }
 
-header ul li:hover:before, footer ul li:hover:before{
+/*header ul li:hover:before, footer ul li:hover:before{
     right: 0;
+}*/
+
+.top, .base{
+    letter-spacing: -0.05em;
+    display: block;
+    
+}
+
+.base{
+    transition: all .3s linear;
 }
 
 
+.letter{
+    /*width: 10px;
+    height: 30px;*/
+    position: relative;
+    /*transform: translateY(0);*/
+    transition: all .1s linear;
+    top: 0;
+}
+
+.top{
+    opacity: 0;
+    transition: all .2s linear;
+    position: relative;
+    top: 0px;
+    /*transition-delay: 1s;*/
+}
+
+.hover_animation .letter{
+    /*transform: translateY(10px);*/
+    /*top: 20px;*/
+}
+
+.hover_animation .top {
+    opacity: 1;   
+}
+
+.hover_animation_done .top .letter{
+    top: 15px;
+}
+
+.hover_animation .base .letter{
+    top: 15px;
+}
+
+.hover_animation_remove .letter{
+    transition-delay: 0s !important;
+}
+
+.hover_animation_remove .top, .hover_animation_remove .base{
+    transition-duration: .5s
+}
+
+.hover_animation .base{
+    opacity: 0;
+}
