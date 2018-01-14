@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto Condensed';
+    list-style: none;
     /* font-style: italic; */
 }
 body {
@@ -18,13 +19,13 @@ header {
     display: flex;
     position: relative;
     width: 100%;
-    height: 150px;
+    /*height: 150px;*/
     justify-content: space-between;
     padding: 25px;
 }
 #logo {
-    height: 100px;
-    width: 250px;
+    height: 50px;
+    width: 147px;
     background: url('../images/logo.svg') no-repeat center;
     background-size: contain;
 }
@@ -32,16 +33,24 @@ header {
     display: none;
     color: #fff;
 }
-header ul {
+header ul , footer ul{
     display: flex;
     color: #fff;
     list-style-type: none;
     flex-grow: 0;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 100;
     flex-wrap: wrap;
-    max-width: calc(100% - 164px);
+    max-width: calc(100% - 147px);
     justify-content: flex-end;
+    font-style: italic;
+    height: fit-content;   
+}
+
+footer ul{
+    justify-content: flex-start;
+    padding: 20px;
+    max-width: 100vw;
 }
 @media all and (max-width: 600px) {
     body {
@@ -70,13 +79,39 @@ header ul {
     .hidden {
         display: none !important;
     }
+    footer ul{
+        justify-content: center;
+    }
 }
-header ul li {
+header ul li, footer ul li {
     margin: 0 10px;
     cursor: pointer;
+    transition: all 1s linear;
+    position: relative;
 }
 #content {
     width: 100%;
     height: calc(100% - 150px);
     position: relative;
 }
+
+header ul li:hover, footer ul li:hover{
+    transform: translateY(2px);
+}
+
+header ul li:before, footer ul li:before {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    right: 100%;
+    left: 0;
+    top: 96%;
+    transition: all .8s linear;
+    background: #fff;
+}
+
+header ul li:hover:before, footer ul li:hover:before{
+    right: 0;
+}
+
+

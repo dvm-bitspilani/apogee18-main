@@ -3,7 +3,10 @@ var list = document.querySelector("header ul");
 var tap = document.getElementById("tapformenu");
 
 logo.onclick = function() {
-    tap.click();
+    if(window.innerWidth < 600)
+        tap.click();
+    else
+        window.location.href = "./index.html";
 };
 
 tap.onclick = function() {
@@ -25,3 +28,4 @@ tap.onclick = function() {
 function navigate(page) {
     window.location.href = page;
 }
+
