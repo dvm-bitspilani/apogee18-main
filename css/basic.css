@@ -38,7 +38,7 @@ header ul , footer ul{
     color: #fff;
     list-style-type: none;
     flex-grow: 0;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 100;
     flex-wrap: wrap;
     max-width: calc(100% - 147px);
@@ -137,7 +137,7 @@ header ul li:before, footer ul li:before {
 
 .top{
     opacity: 0;
-    transition: all .2s linear;
+    transition: all .2s linear .05s;
     position: relative;
     top: 0px;
     /*transition-delay: 1s;*/
@@ -153,11 +153,11 @@ header ul li:before, footer ul li:before {
 }
 
 .hover_animation_done .top .letter{
-    top: 15px;
+    top: 1.4rem;
 }
 
 .hover_animation .base .letter{
-    top: 15px;
+    top: 1.2rem;
 }
 
 .hover_animation_remove .letter{
@@ -179,7 +179,7 @@ header ul li:before, footer ul li:before {
     align-items:center;
 }
 .Title{
-    width: 50vw;
+    /*width: 50vw;*/
     height: fit-content;
     line-height: 4em;
 }
@@ -202,6 +202,12 @@ text-align: center;
 .tech{font-size:7em;
     font-weight: bold;
     color: #FFF;
+}
+
+@media only screen and (max-width:768px){
+    .tech{
+        font-size: 3em;
+    }
 }
 
 
