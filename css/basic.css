@@ -38,7 +38,7 @@ header ul , footer ul{
     color: #fff;
     list-style-type: none;
     flex-grow: 0;
-    font-size: .8rem;
+    font-size: 1.25rem;
     font-weight: 100;
     flex-wrap: wrap;
     max-width: calc(100% - 147px);
@@ -171,3 +171,38 @@ header ul li:before, footer ul li:before {
 .hover_animation .base{
     opacity: 0;
 }
+.middlesection{
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.Title{
+    width: 50vw;
+    height: fit-content;
+    line-height: 4em;
+}
+.line1,.line2,.line3{
+font-style: italic; 
+text-align: center;
+}
+.line1{
+    font-size: 1.5em;
+    /*font-family: azo sans ;*/
+}
+.line2{
+    font-size: 1.5em;
+    /*font-family: azo sans ;*/
+}
+.line3{
+    font-size: 2.5em;
+    /*font-family: azo sans ;*/
+}
+.tech{font-size:7em;
+    font-weight: bold;
+    color: #FFF;
+}
+
+
+
