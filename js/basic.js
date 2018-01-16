@@ -37,8 +37,8 @@ window.onload = function texteffect(){
   for(var i = 0;i < 14;i++) {     
 var style =
 document.createElement('style'); style.type = 'text/css'; 
-style.innerHTML = '.techstyle' + i + ' { text-shadow: ' + (i-9)*1.25 + 'px 5px #9C82FD,' + (.8*i
--9)*1.75 + 'px 5px #7DA7FC; }';
+style.innerHTML = '.techstyle' + i + ' { text-shadow: ' + (i-9)*1.65*0.05 + 'vmax 5px #9C82FD,' + (.8*i
+-9)*2.35*0.05 + 'vmax 5px #7DA7FC; }';
 document.getElementsByTagName('head')[0].appendChild(style);
 
 // document.getElementById('techfest').className = 'techfest'+ i +' tech';
@@ -48,7 +48,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
   for(var i = 0;i <= 4;i++) {     
 var style =
 document.createElement('style'); style.type = 'text/css'; style.innerHTML =
-'.feststyle' + i + ' { text-shadow: ' + (i+1)*(2) + 'px 5px #9C82FD,' + (i+1)*3.8 + 'px 5px #7DA7FC; }';
+'.feststyle' + i + ' { text-shadow: ' + (i+1)*(2)*0.05 + 'vmax 5px #9C82FD,' + (i+1)*3.8*0.05 + 'vmax 5px #7DA7FC; }';
 document.getElementsByTagName('head')[0].appendChild(style);
 
 // document.getElementById('techfest').className = 'techfest'+ i +' tech';
@@ -79,3 +79,8 @@ createstylesforfest();
 }
 
 
+// (i-9)*1.25
+// (.8*i
+// -9)*1.75
+// (i+1)*(2)
+// (i+1)*3.8
