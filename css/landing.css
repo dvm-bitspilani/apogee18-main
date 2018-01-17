@@ -1,0 +1,13 @@
+#main{
+	background: url('../images/img2.jpg');
+	background-size: cover;
+	background-position-x: center;
+}
+
+.middlesection{
+	background: transparent;
+}
+
+.Title{
+	color: #fff;
+}

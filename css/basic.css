@@ -38,7 +38,7 @@ header ul , footer ul{
     color: #fff;
     list-style-type: none;
     flex-grow: 0;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 100;
     flex-wrap: wrap;
     max-width: calc(100% - 147px);
@@ -118,7 +118,7 @@ header ul li:before, footer ul li:before {
 .top, .base{
     letter-spacing: -0.05em;
     display: block;
-    
+    position:relative;
 }
 
 .base{
@@ -137,7 +137,7 @@ header ul li:before, footer ul li:before {
 
 .top{
     opacity: 0;
-    transition: all .2s linear;
+    transition: all .2s linear .05s;
     position: relative;
     top: 0px;
     /*transition-delay: 1s;*/
@@ -153,15 +153,15 @@ header ul li:before, footer ul li:before {
 }
 
 .hover_animation_done .top .letter{
-    top: 15px;
+    top: 1.4rem;
 }
 
 .hover_animation .base .letter{
-    top: 15px;
+    top: 1.2rem;
 }
 
 .hover_animation_remove .letter{
-    transition-delay: 0s !important;
+    transition-delay: .1s !important;
 }
 
 .hover_animation_remove .top, .hover_animation_remove .base{
@@ -179,7 +179,7 @@ header ul li:before, footer ul li:before {
     align-items:center;
 }
 .Title{
-    width: 50vw;
+    /*width: 50vw;*/
     height: fit-content;
     line-height: 5.75vmax;
    /* border: 2px solid black;*/
@@ -219,6 +219,14 @@ text-align: center;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
+}
+
+.techcont .base{
+    top: -3vmax;
+}
+
+.techcont .hover_animation_done .top .letter{
+    top: 3vmax;
 }
 @media screen and (min-width:500px) and (max-width: 700px) {
 .Title{
@@ -273,6 +281,12 @@ text-align: center;
 }
 }
 
+
+@media only screen and (max-width:768px){
+    .tech{
+        font-size: 3em;
+    }
+}
 
 
 
