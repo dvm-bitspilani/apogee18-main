@@ -1,27 +1,74 @@
 #content {
     display: flex;
+    position: relative;
+    z-index: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 #events {
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
     height: 250px;
     width: 100%;
     margin: -75px 20px 0 20px;
     padding: 0;
     align-items: center;
+    perspective-origin: center center;
+    transform-style: preserve-3d;
+    perspective:100px;
 }
-.event {
-    background: #333;
+.event{
+    /*background-color: red;*/
     min-width: 400px;
     height: calc(100% - 40px);
     margin: 0 20px;
     float: left;
-    /* transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+@keyframes rotate {
+    0% {transform: translate3d(0,0,0) rotateX(0deg);}
+    25% {transform: translate3d(0,0,2px) rotateX(-1deg);}
+    50% {transform: translate3d(0,0,4px) rotateX(-1deg);}
+    75% {transform: translate3d(0,0,6px) rotateX(-1deg);}
+    100% {transform: translate3d(0,0,8px) rotateX(0deg);}
+}
+@keyframes antirotate {
+    0% {transform: translate3d(0,0,8px) rotateX(0deg);}
+    25% {transform: translate3d(0,0,6px) rotateX(1deg);}
+    50% {transform: translate3d(0,0,4px) rotateX(1deg);}
+    75% {transform: translate3d(0,0,2px) rotateX(1deg);}
+    100% {transform: translate3d(0,0,0px) rotateX(0deg);}
+}
+.content,.back-a,.back-b,.back-c,.back-d
+{   
+    position: absolute;
+    content: ' ';
+    min-width: 400px;
+    height: calc(100% - 40px);
+    background: #fff;
+    z-index: 2;
+    transition: all 0.2s cubic-bezier(1,0,0,1);
+}
+.back-a,.back-b,.back-c,.back-d
+{   
+    background: black;
+}
+.content {animation: 0.2s antirotate both;}
+.back-a {opacity: 0.7;}
+.back-b {opacity: 0.75;}
+.back-c {opacity: 0.8;}
+.back-d {opacity: 0.85;}
+.event:hover >.content
+{   
+    animation: 0.2s rotate both;
+}
+.event:hover >.back-a {  transform: translate3d(0,0,0); }
+.event:hover >.back-b {  transform: translate3d(0,0,2px); }
+.event:hover >.back-c {  transform: translate3d(0,0,4px); }
+.event:hover >.back-d {  transform: translate3d(0,0,6px); }
+
 #descs {
     display: flex;
     overflow: hidden;
@@ -38,5 +85,13 @@
     height: calc(100% - 20px);
     margin: 0 20px;
     float: left;
-    /* transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.content_active
+{   transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
 }
