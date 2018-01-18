@@ -47,9 +47,14 @@ window.onload = function texteffect(){
   for(var i = 0;i < 14;i++) {     
 var style =
 document.createElement('style'); style.type = 'text/css'; 
-style.innerHTML = '.techstyle' + i + ' { text-shadow: ' + (i-9)*1.65*0.05 + 'vmax 5px #9C82FD,' + (.8*i
--9)*2.35*0.05 + 'vmax 5px #7DA7FC; }';
-document.getElementsByTagName('head')[0].appendChild(style);
+style.innerHTML = '.techstyle' + i + ' { text-shadow: ' + (i-7)*1.65*0.05 + 'vmax 5px #9C82FD,' + (.8*i
+-7)*2.35*0.05 + 'vmax 5px #7DA7FC; }';
+setTimeout((function(){
+    // console.log('put')
+    document.getElementsByTagName('head')[0].appendChild(this.style)
+}).bind({
+    "style": style
+}), 100);
 
 
             // document.getElementById('techfest').className = 'techfest'+ i +' tech';
@@ -58,12 +63,16 @@ document.getElementsByTagName('head')[0].appendChild(style);
     function createstylesforfest(){    
 
 
-  for(var i = 0;i <= 4;i++) {     
+  for(var i = 14;i <= 18;i++) {     
 var style =
-document.createElement('style'); style.type = 'text/css'; style.innerHTML =
-'.feststyle' + i + ' { text-shadow: ' + (i+1)*(2)*0.05 + 'vmax 5px #9C82FD,' + (i+1)*3.8*0.05 + 'vmax 5px #7DA7FC; }';
-document.getElementsByTagName('head')[0].appendChild(style);
-
+document.createElement('style'); style.type = 'text/css'; 
+style.innerHTML = '.techstyle' + i + ' { text-shadow: ' + (i+1)*(2)*0.05 + 'vmax 5px #9C82FD,' + (i+1)*3.8*0.05 + 'vmax 5px #7DA7FC; }';
+setTimeout((function(){
+    // console.log('put')
+    document.getElementsByTagName('head')[0].appendChild(this.style)
+}).bind({
+    "style": style
+}), 300);
 
             // document.getElementById('techfest').className = 'techfest'+ i +' tech';
         }; 
@@ -83,8 +92,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
     // document.getElementById("techfest").innerHTML = "" + newstr + ""; 
     // document.getElementById("techfest").innerHTML = wrapSpan(newstr); 
-    letterAnimation(document.getElementById("techfest"), "techstyle")
-    letterAnimation(document.getElementById("techfest2"), "feststyle")
+    letterAnimation(document.querySelector("#techfest"), "techstyle")
+    // letterAnimation(document.getElementById("techfest2"), "feststyle")
 
     // var mystr2 = document.getElementById("techfest2").innerHTML;
     // mystr2 = mystr2.split("");

@@ -222,7 +222,7 @@ text-align: center;
 }
 
 .techcont .base{
-    top: -3vmax;
+    /*top: -3vmax;*/
 }
 
 .techcont .hover_animation_done .top .letter{
@@ -284,7 +284,7 @@ text-align: center;
 
 @media only screen and (max-width:768px){
     .tech{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
 
