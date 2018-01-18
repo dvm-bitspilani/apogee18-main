@@ -1,14 +1,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalctle=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/fonts.css">
-     <link rel="stylesheet" href="css/contact.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  -->
     <title>Contact | APOGEE 2018</title>
 </head>
-<div class="ctwrapper">
+<body>
+    <section id="main">
+        <header>
+            <div id="logo"></div>
+            <ul class="hidden">
+                <li onclick="navigate('events.html')" class="link">EVENTS</li>
+                <li onclick="navigate('about.html')" class="link">ABOUT APOGEE</li>
+                <li onclick="navigate('contact.html')" class="link">CONTACT US</li>
+                <li onclick="navigate('events.html')" class="link">SPONSORS</li>
+            </ul>
+            <div id="tapformenu" class="logo">TAP LOGO FOR MENU</div>
+        </header>
+    <div class="ctwrapper">
 	<div class="ctcontainer">
 	<div class="ctheading"><p>contact</p></div>
 	<div class="ctcontent">
@@ -39,6 +53,9 @@
     </div>
 </div>
 </div>
-<script type="text/javascript" src="js/contact.js"></script>
+    </section>
+</section>
+    <script src="js/basic.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
