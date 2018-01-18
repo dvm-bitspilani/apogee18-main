@@ -1,0 +1,110 @@
+*
+{
+	padding: 0px;
+	margin:0px;
+}
+body
+{
+	width: 100vw;
+	height: 100vh;
+}
+.ctwrapper
+{	font-family: 'azo';
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	height: 100vh;
+	background-color: #222;
+	overflow: hidden;
+	/*display: none;*/
+}
+.ctcontainer
+{
+display: flex;
+justify-content: center;
+height: 95vh;
+flex-direction: column;
+margin: auto;
+overflow:hidden;
+}
+.ctheading
+{
+display: flex;
+justify-content: center;
+}
+.ctheading p
+{
+font-family: 'azo';
+color: red;
+font-size: 4rem;
+text-align: center;
+padding-bottom: 3vh;
+position: relative;
+z-index: 3;
+font-weight:bold;
+}
+.ctheading p:before
+{	font-family: 'azo';
+	position: absolute;
+	content: 'contact';
+	top: -4px;
+	color: white;
+	font-weight: bold;
+}
+.ctcontent
+{	display: flex;
+	justify-content: center;
+	margin:0 auto;
+}
+.ctitem
+{	margin:0 10px;
+	height: 300px;
+	min-width: 300px;
+	color: black;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+}
+#ctimg
+{
+	position: absolute;
+	content: ' ';
+	min-width: 300px;
+	height: 200px;
+	background-color: white;
+}
+#ctinfo
+{	margin-top: 200px;
+	min-width:300px;
+	height: 100px;
+	color:white; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#ctinfo p
+{
+	margin:auto;
+}
+@media only screen and (max-width: 700px)
+{
+	.ctcontainer
+{
+	display: flex;
+    justify-content: center;
+    height: 95vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.ctheading p
+{
+	padding:0px;
+	font-size: 2rem;
+}
+.ctcontainer
+{	
+	height: 100vh;
+}
+}

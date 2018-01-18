@@ -1,3 +1,7 @@
+if(window.innerWidth>700)
+{
+    document.querySelector("body").innerHTML+='<script src="contact.js"></script>';
+}
 var logo = document.getElementById("logo");
 var list = document.querySelector("header ul");
 var tap = document.getElementById("tapformenu");
@@ -113,3 +117,6 @@ setTimeout((function(){
 // -9)*1.75
 // (i+1)*(2)
 // (i+1)*3.8
+
+
+//random check

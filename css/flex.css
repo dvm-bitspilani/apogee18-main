@@ -56,12 +56,42 @@
 	top: 30px;
 }
 #closeb
-{	transition: all 0.5s linear;
-	transform: rotate(45deg);
+{	transform: rotate(45deg);
 }
 #closea
+{	transform: rotate(-45deg);
+}
+#close:hover > #closea
 {
-	transform: rotate(-45deg);
+	animation: flexantirotate 0.5s linear;
+	
+}
+#close:hover > #closeb
+{
+	animation: flexrotate 0.5s linear;
+	
+}
+@keyframes flexrotate 
+{
+	0%,100%
+	{
+		transform: rotate(45deg);
+	}
+	50%
+	{
+		transform: rotate(0deg);
+	}
+}
+@keyframes flexantirotate
+{
+	0%,100%
+	{
+		transform: rotate(-45deg);
+	}
+	50%
+	{
+		transform: rotate(0deg);
+	}
 }
 .flex-content
 {	display: flex;
