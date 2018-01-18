@@ -20,6 +20,7 @@
     }
 }
 body {
+    overflow:hidden;
     background: #fff;
     /* padding: 16px; */
     animation: 0.5s bodyborder ease-in-out forwards;
