@@ -7,6 +7,7 @@ function sad(el) {
     flex.style.display="block";
     flex.style.left=lx+"px";
     flex.style.width="400px";   
+    flex.style.height="200px";   
     flex.style.top=ly+"px";
     
     setTimeout(()=>{flex.className+="_active"},50);

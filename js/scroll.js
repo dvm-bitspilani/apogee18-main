@@ -62,13 +62,13 @@ function scroll(e) {
     }
     event1.style.marginLeft = event1.style.marginLeft || 30;
     desc1.style.marginLeft = desc1.style.marginLeft || 30;
-    var val = parseInt(event1.style.marginLeft) - 2*delta;
+    var val = parseInt(event1.style.marginLeft) - 1.3*delta;
     var right = val > -(n + 1)*event1.clientWidth + events.clientWidth;
     if(val<30 && right) {
         event1.style.marginLeft = val;
-        setTimeout(function(){
+        // setTimeout(function(){
             desc1.style.marginLeft = val;
-        }, 70);
+        // }, 70);
     }
     e.preventDefault();
 }
@@ -77,3 +77,23 @@ addWheelListener(body,scroll);
 addWheelListener(events,scroll);
 addWheelListener(descs,scroll);
 
+var allevents = document.querySelectorAll('.event');
+var current;
+
+function eventHover(e) {
+    for(i = 0; i < allevents.length; i++) {
+        if(e.target == allevents[i]) {
+            current = i;
+            document.querySelectorAll('.desc')[current].className = "desc active";
+        }
+    }
+}
+
+function eventHoverOut() {
+    document.querySelectorAll('.desc')[current].className = "desc";
+}
+
+for(var i = 0; i < allevents.length; i++) {
+    allevents[i].onmouseenter = eventHover;
+    allevents[i].onmouseleave = eventHoverOut;
+}

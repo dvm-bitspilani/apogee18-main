@@ -1,15 +1,15 @@
-/*@keyframes flexrotate
+@keyframes flexrotate
 {
 	 0% {transform:rotateX(0deg);}
     25% {transform: rotateX(-1deg);}
     50% {transform: rotateX(-1deg);}
     75% {transform: rotateX(-1deg);}
     100% {transform:rotateX(0deg);}
-}*/
+}
 .flex
 {
 	display: none;
-	transition: all 0.5s ease;
+	transition: all 1s cubic-bezier(1,.08,.58,1.02);
 }
 .flex_active
 {	color: white;
@@ -24,7 +24,8 @@
 	height: 100vh !important;
 	display: none;
 	justify-content: center;
-	transition:all 0.3s ease;
+	transition: all 0.5s cubic-bezier(1,.08,.58,1.02);
+	animation: 0.5s flexrotate;
 }
 .head
 {
