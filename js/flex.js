@@ -10,14 +10,14 @@ function sad(el) {
     flex.style.height="200px";   
     flex.style.top=ly+"px";
     
-    setTimeout(()=>{flex.className+="_active"},50);
+    setTimeout(()=>{flex.className+=" active"},50);
 
 }
     document.querySelector("#close").onclick = function()
 {
-    document.querySelector(".flex_active").className="flex";
+    document.querySelector(".flex.active").className="flex";
 
-    setTimeout(()=>{document.querySelector(".flex").style.display="none"},50);
+    setTimeout(()=>{document.querySelector(".flex").style.display="none"},500);
 
 }
 

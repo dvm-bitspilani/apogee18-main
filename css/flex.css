@@ -9,23 +9,21 @@
 .flex
 {
 	display: none;
-	transition: all 1s cubic-bezier(1,.08,.58,1.02);
-}
-.flex_active
-{	color: white;
-	display: flex;
+	color: white;
 	flex-direction: column;
 	background-color: rgba(37,37,37,1);
 	position: absolute;
 	z-index: 5;
+	justify-content: center;
+	transition: all 0.5s cubic-bezier(1,.08,.58,1.02);
+}
+.flex.active
+{	
+	display: flex;
 	top: 0px !important;
 	left: 0px !important;
 	width: 100vw !important;
 	height: 100vh !important;
-	display: none;
-	justify-content: center;
-	transition: all 0.5s cubic-bezier(1,.08,.58,1.02);
-	animation: 0.5s flexrotate;
 }
 .head
 {
@@ -46,6 +44,7 @@
 	height: 50px;
 	right: 50px;
 	transform-origin: center center;
+	cursor: pointer;
 }
 #closeb,#closea
 {
