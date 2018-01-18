@@ -13,7 +13,7 @@
 	flex-direction: column;
 	background-color: rgba(37,37,37,1);
 	position: absolute;
-	z-index: 5;
+	z-index: 11;
 	justify-content: center;
 	transition: all 0.3s cubic-bezier(1,.08,.58,1.02);
 }
