@@ -13,12 +13,13 @@ body
 	position: absolute;
 	width: 100vw;
 	top: 0;
-	left: 0;
+	left: 0px;
 	z-index: 5;
 	height: 100vh;
 	background-color: #222;
 	overflow: hidden;
-	/*display: none;*/
+	display: none;
+	border: 16px solid #fff;
 }
 .ctcontainer
 {
