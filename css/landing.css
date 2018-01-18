@@ -34,26 +34,29 @@
 }
 
 .Title .top .letter{
-	top: -2rem;	
+	top: -3rem;	
 }
 
 #background{
 	position: absolute;
-    top: 0;
-    left: 0;
+    top: -50vh;
+    left: -50vw;
+    width: 200vw;
+    height: 200vh;
     z-index: -2;
     background: url('../images/img2.jpg');
 	background-size: cover;
 	background-position-x: center;
-	animation: flow 1.5s alternate linear infinite;
+	
+	animation: flow 100s linear infinite;
 }
 
 @keyframes flow{
 	from{
-		transform: rotateX(0deg);
+		transform: rotateZ(0deg);
 	}
 	to{
-		transform: rotateX(5deg);	
+		transform: rotateZ(360deg);	
 	}
 }
 
