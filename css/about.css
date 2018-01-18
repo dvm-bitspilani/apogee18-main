@@ -1,0 +1,64 @@
+*
+{
+	padding: 0px;
+	margin:0px;
+}
+body
+{
+	width: 100vw;
+	height: 100vh;
+}
+.abtwrapper
+{	font-family: 'azo';
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	height: 100vh;
+	background-color: #222;
+	border: 16px solid #fff;
+	display: none;
+}
+.abtcontainer
+{
+	display: flex;
+    justify-content: center;
+    height: 95vh;
+    flex-direction: column;
+    margin: auto;
+}
+.abtheading
+{
+	display: flex;
+	justify-content: center;
+}
+.abtheading p
+{font-family: 'azo';
+color: red;
+font-size: 4rem;
+text-align: center;
+padding-bottom: 3vh;
+position: relative;
+z-index: 3;
+font-weight:bold;
+}
+.abtheading p:before
+{	font-family: 'azo';
+	position: absolute;
+	content: 'about';
+	top: -4px;
+	color: white;
+	font-weight: bold;
+}
+.abtcontent
+{	display: flex;
+	justify-content: center;
+	color: white;
+	overflow: auto;
+	max-height:45vh;
+}
+.abtcontent p 
+{	
+	padding: 0 10%;
+}
