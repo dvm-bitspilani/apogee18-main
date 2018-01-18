@@ -17,7 +17,7 @@ function sad(el) {
 {
     document.querySelector(".flex.active").className="flex";
 
-    setTimeout(()=>{document.querySelector(".flex").style.display="none"},500);
+    setTimeout(()=>{document.querySelector(".flex").style.display="none"},300);
 
 }
 

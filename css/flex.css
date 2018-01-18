@@ -15,7 +15,7 @@
 	position: absolute;
 	z-index: 5;
 	justify-content: center;
-	transition: all 0.5s cubic-bezier(1,.08,.58,1.02);
+	transition: all 0.3s cubic-bezier(1,.08,.58,1.02);
 }
 .flex.active
 {	
