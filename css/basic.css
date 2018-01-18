@@ -178,6 +178,8 @@ header ul li:before, footer ul li:before {
     /*top: 20px;*/
 }
 
+
+
 .hover_animation .top {
     opacity: 1;   
 }
@@ -320,3 +322,12 @@ text-align: center;
 
 
 
+footer img{
+    width:inherit;
+    height: inherit;
+}
+
+footer a{
+    width: 50px;
+    line-height: 50px;
+}
