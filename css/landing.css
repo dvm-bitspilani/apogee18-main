@@ -1,7 +1,5 @@
 #main{
-	background: url('../images/img2.jpg');
-	background-size: cover;
-	background-position-x: center;
+	background:transparent;	
 }
 
 .middlesection{
@@ -10,4 +8,66 @@
 
 .Title{
 	color: #fff;
+}
+
+.tech .letter{
+	letter-spacing: .3rem
+}
+
+.techcont *, .techcont{
+	/*border: 1px solid #fff;*/
+	
+}
+
+.techcont{
+	width: auto;
+	flex-direction: column;
+	position: relative;
+}
+
+.techcont .top{
+	position:absolute;
+}
+
+.Title .hover_animation_done .top .letter{
+	top: 0rem;
+}
+
+.Title .top .letter{
+	top: -2rem;	
+}
+
+#background{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: url('../images/img2.jpg');
+	background-size: cover;
+	background-position-x: center;
+	animation: flow 1.5s alternate linear infinite;
+}
+
+@keyframes flow{
+	from{
+		transform: rotateX(0deg);
+	}
+	to{
+		transform: rotateX(5deg);	
+	}
+}
+
+#borders{
+	position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: 16px solid #fff;
+}
+
+@media only screen and (max-width: 600px){
+	#borders{
+		border-width: 8px;
+	}
 }
