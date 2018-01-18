@@ -1,0 +1,57 @@
+*
+{
+	padding: 0px;
+	margin:0px;
+}
+body
+{
+	width: 100vw;
+	height: 100vh;
+}
+.abtwrapper
+{	
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.abtcontainer
+{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	margin: auto;
+}
+.abtheading
+{
+	display: flex;
+	justify-content: center;
+}
+.abtheading p
+{font-family: 'azo';
+color: red;
+font-size: 4rem;
+text-align: center;
+padding-bottom: 3vh;
+position: relative;
+z-index: 3;
+font-weight:bold;
+}
+.abtheading p:before
+{	font-family: 'azo';
+	position: absolute;
+	content: 'about';
+	top: -4px;
+	color: white;
+	font-weight: bold;
+}
+.abtcontent
+{	display: flex;
+	justify-content: center;
+	color: white;
+	overflow: auto;
+	max-height:45vh;
+}
+.abtcontent p 
+{	
+	padding: 0 10%;
+}

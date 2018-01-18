@@ -11,8 +11,8 @@
     overflow-x: hidden;
     position: relative;
     height: 250px;
-    width: 100%;
-    margin: -75px 20px 0 20px;
+    width: calc(100% - 300px);
+    margin: -75px 20px 0 300px;
     padding: 0;
     align-items: center;
     transform-style: preserve-3d;
@@ -69,13 +69,51 @@
 .event:hover >.back-c {  transform: translate3d(0,0,4px); }
 .event:hover >.back-d {  transform: translate3d(0,0,6px); }
 
+#eventCat {
+    position: absolute;
+    left: 20px;
+    margin-top: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#eventCat li {
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 7px;
+}
+
+#eventCat li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.1s ease-in;
+}
+
+#eventCat li.selected {
+    background: #fff;
+    color: #333;
+}
+
+#eventCat li:hover::after {
+    width: 100%;
+}
+
 #descs {
     display: flex;
     overflow: hidden;
     position: relative;
     height: 100px;
-    width: 100%;
-    margin: -20px 20px 0 20px;
+    width: calc(100% - 300px);
+    margin: -20px 20px 0 300px;
     padding: 0;
     align-items: center;
     perspective: 100px;
