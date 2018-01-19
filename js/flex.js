@@ -12,6 +12,10 @@ function sad(el) {
     flex.style.backgroundImage = e.style.backgroundImage;
     
     setTimeout(()=>{flex.className+=" active"},50);
+    setTimeout(function(){
+        flex.style.backgroundImage = "";
+        flex.style.backgroundColor = $(e).parent().attr('_b');
+    },500);
 
 }
     document.querySelector("#close").onclick = function()

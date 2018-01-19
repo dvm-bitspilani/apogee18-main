@@ -43,15 +43,15 @@
         }
 })(window,document);
 
-var events = document.querySelector("#events");
-var descs = document.querySelector("#descs");
-var event1 = document.querySelector(".event");
-var desc1 = document.querySelector(".desc");
-var body = document.body;
-var n = document.querySelectorAll(".event").length;
 // var accept = true;
 
+var events = document.querySelector("#events");
+var descs = document.querySelector("#descs");
+
 function scroll(e) {
+    var event1 = document.querySelector(".event");
+    var desc1 = document.querySelector(".desc");
+    var n = document.querySelectorAll(".event").length;
     // if(!accept) return;
     var delta;
     if(Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
@@ -73,27 +73,32 @@ function scroll(e) {
     e.preventDefault();
 }
 
-addWheelListener(body,scroll);
-addWheelListener(events,scroll);
-addWheelListener(descs,scroll);
+function resetEvents() {
+    var allevents = document.querySelectorAll('.event');
+    var current;
 
-var allevents = document.querySelectorAll('.event');
-var current;
-
-function eventHover(e) {
-    for(i = 0; i < allevents.length; i++) {
-        if(e.target == allevents[i]) {
-            current = i;
-            document.querySelectorAll('.desc')[current].className = "desc active";
+    function eventHover(e) {
+        
+        for(i = 0; i < allevents.length; i++) {
+            if(e.target == allevents[i]) {
+                current = i;
+                document.querySelectorAll('.desc')[current].className = "desc active";
+            }
         }
     }
+    
+    function eventHoverOut() {
+        document.querySelectorAll('.desc')[current].className = "desc";
+    }
+
+    for(var i = 0; i < allevents.length; i++) {
+        allevents[i].onmouseenter = eventHover;
+        allevents[i].onmouseleave = eventHoverOut;
+    }
+
+    addWheelListener(document.body,scroll);
+    addWheelListener(events,scroll);
+    addWheelListener(descs,scroll);
 }
 
-function eventHoverOut() {
-    document.querySelectorAll('.desc')[current].className = "desc";
-}
-
-for(var i = 0; i < allevents.length; i++) {
-    allevents[i].onmouseenter = eventHover;
-    allevents[i].onmouseleave = eventHoverOut;
-}
+resetEvents();

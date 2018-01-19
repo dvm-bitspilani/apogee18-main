@@ -124,6 +124,8 @@
     perspective: 100px;
 }
 
+#nextEvent, #prevEvent {display: none;}
+
 @media all and (max-width: 600px) {
     #eventCat {
         left: 50%;

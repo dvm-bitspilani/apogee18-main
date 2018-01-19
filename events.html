@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/flex.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/colors.js"></script>
     <title>Events | APOGEE 2018</title>
 </head>
 <body>
@@ -117,6 +118,7 @@
                             var cat = cats[i];
                             cat.events = data.filter(function(el) {return el.category_name == cat.name;});
                         }
+                        $("#eventCat li")[0].click();
                     },
                     error: function(e) {
                         console.log("An error occured: "+e);
