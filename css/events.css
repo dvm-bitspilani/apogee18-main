@@ -26,6 +26,10 @@
     float: left;
     transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
+    /* position: relative; */
+}
+@media all and (max-width: 500px) {
+    .event {min-width: 85vw ; max-width: 85vw ;}
 }
 @keyframes rotate {
     0% {transform: translate3d(0,0,0) rotateX(0deg);}
@@ -45,11 +49,15 @@
 {   
     position: absolute;
     content: ' ';
-    min-width: 400px;
-    height: calc(100% - 40px);
+    width: 400px;
+    height: 200px;
     background: #fff;
     z-index: 2;
     transition: all 0.2s cubic-bezier(1,0,0,1);
+}
+@media all and (max-width: 500px) {
+    .content,.back-a,.back-b,.back-c,.back-d
+        {min-width: 85vw ; max-width: 85vw ;}
 }
 .back-a,.back-b,.back-c,.back-d
 {   
@@ -187,6 +195,11 @@
     float: left;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     color: #fff;
+}
+@media all and (max-width: 500px) {
+    .desc {
+        min-width: 85vw; max-width: 85vw;
+    }
 }
 .desc h3 {
     font-size: 2rem;

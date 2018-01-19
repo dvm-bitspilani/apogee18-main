@@ -78,7 +78,6 @@ function resetEvents() {
     var current;
 
     function eventHover(e) {
-        
         for(i = 0; i < allevents.length; i++) {
             if(e.target == allevents[i]) {
                 current = i;

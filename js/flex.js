@@ -6,8 +6,8 @@ function sad(el) {
     lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
     flex.style.display="block";
     flex.style.left=lx+"px";
-    flex.style.width="400px";   
-    flex.style.height="200px";   
+    flex.style.width=$(".event")[0].clientWidth;   
+    flex.style.height=$(".event")[0].clientHeight;   
     flex.style.top=ly+"px";
     flex.style.backgroundImage = e.style.backgroundImage;
     

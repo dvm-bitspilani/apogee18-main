@@ -108,6 +108,7 @@ footer ul{
     }
     footer ul{
         justify-content: center;
+        padding:0;
     }
 }
 header ul li, footer ul li {
@@ -168,9 +169,15 @@ header ul li:before, footer ul li:before {
 .top{
     opacity: 0;
     transition: all .5s linear .05s;
-    position: relative;
-    top: 0px;
+    /*position: relative;
+    top: 0px;*/
+    position: absolute;
+    
     /*transition-delay: 1s;*/
+}
+
+.top .letter{
+    top: -1.4rem;
 }
 
 .hover_animation .letter{
@@ -178,12 +185,14 @@ header ul li:before, footer ul li:before {
     /*top: 20px;*/
 }
 
+
+
 .hover_animation .top {
     opacity: 1;   
 }
 
 .hover_animation_done .top .letter{
-    top: 1.4rem;
+    top: 0;
 }
 
 .hover_animation .base .letter{
@@ -317,6 +326,4 @@ text-align: center;
         font-size: 2.5em;
     }
 }
-
-
 

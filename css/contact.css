@@ -53,10 +53,11 @@ font-weight:bold;
 	font-size: 1.2rem;
 }
 .ctitem
-{	margin:0 10px;
+{
+	margin: 40px 0px;
 	height: 300px;
-	min-width: 300px;
-	color: black;																
+	min-width: 400px;
+	color: black;
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
@@ -67,6 +68,7 @@ font-weight:bold;
 }	
 #ctimg
 {
+	margin-left: 50px;
 	position: absolute;
 	content: ' ';
 	min-width: 300px;
@@ -86,8 +88,33 @@ font-weight:bold;
 {
 	margin:auto;
 }
+#nextCt {
+	display: block;
+	position: absolute;
+	top: 90%;
+	right: 10px;
+	background: #fff;
+	color: #333;
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	display: none;
+}
+#prevCt {
+	display: block;
+	position: absolute;
+	top: 90%;
+	left: 10px;
+	background: #fff;
+	color: #333;
+	font-size: 1.2rem;
+	padding: 3px 8px;
+	display: none;
+}
 @media only screen and (max-width: 700px)
-{
+{	#nextCt,#prevCt
+	{
+		display: block;
+	}
 	.ctcontainer
 {
 	display: flex;
