@@ -73,4 +73,14 @@ function scroll(e) {
 
 addWheelListener(body,scroll);
 addWheelListener(events,scroll);
-addWheelListener(descs,scroll);
+
+$("#nextCt").click(function(){
+    if(parseInt($($(".ctitem")[0]).css('margin-left')) >= - $('.ctitem').length*440 + 880) {
+        $($(".ctitem")[0]).css('margin-left',"-=400px");
+    }
+});
+$("#prevCt").click(function(){
+    if(parseInt($($(".ctitem")[0]).css('margin-left')) < 30) {
+        $($(".ctitem")[0]).css('margin-left',"+=400px");
+    }
+});
