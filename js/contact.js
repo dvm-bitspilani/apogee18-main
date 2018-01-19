@@ -60,7 +60,7 @@ function scroll(e) {
     }
     event1.style.marginLeft = event1.style.marginLeft || 30;
     // desc1.style.marginLeft = desc1.style.marginLeft || 30;
-    var val = parseInt(event1.style.marginLeft) - 1.3*delta;
+    var val = parseInt(event1.style.marginLeft) - 0.8*delta;
     var right = val > -(cn + 1)*event1.clientWidth + events.clientWidth;
     if(val<30 && right) {
         event1.style.marginLeft = val+"px";

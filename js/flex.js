@@ -9,6 +9,7 @@ function sad(el) {
     flex.style.width="400px";   
     flex.style.height="200px";   
     flex.style.top=ly+"px";
+    flex.style.backgroundImage = e.style.backgroundImage;
     
     setTimeout(()=>{flex.className+=" active"},50);
 

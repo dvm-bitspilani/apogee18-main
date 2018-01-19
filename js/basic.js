@@ -33,9 +33,10 @@ function navigate(page) {
     window.location.href = page;
 }
 
+
 // 
 
-window.onload = function texteffect(){    
+ function texteffect(){    
    function createstylesfortech(){    
 
 //     for(var i = 0;i < 14;i++) {     
@@ -110,7 +111,7 @@ setTimeout((function(){
     // document.getElementById("techfest2").innerHTML = "" + newstr2 + ""; 
 
 }
-
+setTimeout(texteffect,100);
 
 // (i-9)*1.25
 // (.8*i

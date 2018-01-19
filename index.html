@@ -2,21 +2,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
-    <title>Events | APOGEE 2018</title>
+    <title>APOGEE 2018</title>
 </head>
 <body>
-    <section id="main">
+    <div id="loader-container">
+      <div class="preloader">
+        
+        <div id="apogee_container" class="preloader_apogee_container">
+            
+            <div id="mask" class="preloader__mask">
+                <span class="apogee_cover"></span>
+            </div>
+            <span class="apogee_stensil"></span>
+        </div>
+        
+    </div>
+</div>
+<div id="main-container">  
+    <section id="main"> 
         <header>
             <div id="logo"></div>
             <ul class="hidden">
+                <li onclick="navigate('about.html')" class="link">ABOUT</li>
                 <li onclick="navigate('events.html')" class="link">EVENTS</li>
-                <li onclick="navigate('about.html')" class="link">ABOUT APOGEE</li>
                 <li onclick="navigate('contact.html')" class="link">CONTACT US</li>
                 <li onclick="navigate('events.html')" class="link">SPONSORS</li>
             </ul>
@@ -26,25 +41,40 @@
             <div class="Title">
                 <p class="line1">THE ANNUAL </p>
                 <!-- <div class="techcont"><span id="techfest" class="tech">technical</span><span id="techfest2" class="tech"> fest</span></div> -->
-               <div class="techcont tech" id="techfest">technical fest</div>
+                <div class="techcont tech" id="techfest">technical fest</div>
                 <p class="line2">OF</p>
                 <p class="line3">BITS PILANI</p>
-</div>
+            </div>
 
         </section>
         <footer>
             <ul>
-                <li>
-                    <a href="https://twitter.com/bitsapogee?lang=en" target="_blank"><img src="./images/twitter.png"></a></li>
-        <li><a href="https://www.youtube.com/watch?v=wVBO2qEUpck" target="_blank"><img src="./images/ytb.png"></a></li>
-               
+                <li class="link" onclick="navigate('store.html')">OFFICIAL MERCHANDISE STORE</li>
+                <li><span class='top'>.</span><span class="base">.</span></li>
+                <li class="link" onclick="navigate('https://twitter.com/bitsapogee?lang=en')">
+                    TWITTER
+                 </li>
+                 <li><span class='top'>.</span><span class="base">.</span></li>
+                <li class="link" onclick="navigate('https://www.youtube.com/watch?v=wVBO2qEUpck')">
+                    YOUTUBE
+                 </li>
+                
             </ul>
         </footer>
     </section>
 </section>
 <section id="background"></section>
 <section id="borders"></section>
-    <script src="js/animations.js"></script>
-    <script src="js/basic.js"></script>
+
+<!-- THIS SECTION IS JUST TO ADD SOME EXTRA LOAD FOR MAINTAING LOADER FUNCTION DUE TO SOME ERRORS AFTER ACTUAL IMAGES ARE ADDED IT WILL BE REMOVED -->
+<section id="notvisible"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/History-Dielman-Highsmith.jpeg/330px-History-Dielman-Highsmith.jpeg"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/History-Dielman-Highsmith.jpeg/330px-History-Dielman-Highsmith.jpeg"><iframe width="560" height="315" src="https://www.youtube.com/embed/N10iWGPXllY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></section>
+<!-- THIS SECTION IS JUST TO ADD SOME EXTRA LOAD FOR MAINTAING LOADER FUNCTION DUE TO SOME ERRORS AFTER ACTUAL IMAGES ARE ADDED IT WILL BE REMOVED -->
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/basic.js"></script>
+
+<script src="js/loader.js"></script>
+
 </body>
 </html>

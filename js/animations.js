@@ -1,10 +1,10 @@
-(function init(){
+$(function init(){
 	if(window.innerWidth>768){
 		var links = document.querySelectorAll('.link');
 		console.log(links);
 		Array.prototype.forEach.call(links,letterAnimation)
 	}
-})();
+});
 
 function letterAnimation(el, pre,{trigger=null}={}){
 	var name = el.innerText;
@@ -36,3 +36,4 @@ function letterAnimation(el, pre,{trigger=null}={}){
 	})
 }
 
+window.letterAnimation = letterAnimation;
