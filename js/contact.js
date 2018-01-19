@@ -75,12 +75,12 @@ addWheelListener(body,scroll);
 addWheelListener(events,scroll);
 
 $("#nextCt").click(function(){
-    if(parseInt($($(".ctitem")[0]).css('margin-left')) >= - $('.ctitem').length*440 + 880) {
-        $($(".ctitem")[0]).css('margin-left',"-=400px");
+    if(parseInt($($(".ctitem")[0]).css('margin-left'))>-2750) {
+        $($(".ctitem")[0]).animate({marginLeft:"-=340px"},200);
     }
 });
 $("#prevCt").click(function(){
-    if(parseInt($($(".ctitem")[0]).css('margin-left')) < 30) {
-        $($(".ctitem")[0]).css('margin-left',"+=400px");
+    if(parseInt($($(".ctitem")[0]).css('margin-left'))<-30) {
+        $($(".ctitem")[0]).animate({marginLeft:"+=340px"},200);
     }
 });
