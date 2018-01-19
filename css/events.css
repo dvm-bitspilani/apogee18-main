@@ -77,7 +77,7 @@
 #eventCat {
     position: absolute;
     left: 20px;
-    margin-top: -50px;
+    margin-top: 0px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -123,6 +123,55 @@
     align-items: center;
     perspective: 100px;
 }
+
+@media all and (max-width: 600px) {
+    #eventCat {
+        left: 50%;
+        bottom: 5%;
+        top: initial;
+        transform: translateX(-50%);
+        z-index: 10;
+        background: #333;
+    }
+    #nextEvent {
+        display: block;
+        position: absolute;
+        top: 90%;
+        right: 10px;
+        background: #fff;
+        color: #333;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+    #prevEvent {
+        display: block;
+        position: absolute;
+        top: 90%;
+        left: 10px;
+        background: #fff;
+        color: #333;
+        font-size: 1.2rem;
+        padding: 3px 8px;
+    }
+    #eventCat li {
+        display: none;
+    }
+    #eventCat li.selected {
+        display: block;
+    }
+    #events {
+        width: 100%;
+        margin: -75px 20px 0 20px;
+    }
+    #descs {
+        width: 100%;
+        margin: -20px 20px 0 20px;
+    }
+    .visible {
+        display: block !important;
+    }
+}
+
 .desc {
     /* background: #f25; */
     min-width: 400px;
