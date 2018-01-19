@@ -55,7 +55,12 @@
 {   
     background: black;
 }
-.content {animation: 0.2s antirotate both;}
+.content {
+    animation: 0.2s antirotate both;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .back-a {opacity: 0.7;}
 .back-b {opacity: 0.75;}
 .back-c {opacity: 0.8;}

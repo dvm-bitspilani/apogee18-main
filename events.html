@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/events.css">
     <link rel="stylesheet" href="css/flex.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
     <title>Events | APOGEE 2018</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <header>
             <div id="logo"></div>
             <ul class="hidden">
-                <li onclick="navigate('events.html')">EVENTS</li>
+                <li onclick="navigate('index.html')">HOME</li>
                 <li onclick="navigate('about.html')">ABOUT APOGEE</li>
                 <li onclick="navigate('contact.html')">CONTACT US</li>
                 <li onclick="navigate('events.html')">SPONSORS</li>
@@ -24,169 +25,103 @@
         </header>
         <div id="content">
             <ul id="eventCat">
-                <li value="k">Kernel</li>
-                <li value="s" class="selected">Sciences</li>
-                <li value="p">Projects & Papers</li>
-                <li value="co">Coding</li>
-                <li value="q">Quizzing</li>
-                <li value="r">Robotics</li>
-                <li value="ci">Civil</li>
-                <li value="ms">Mechanics</li>
-                <li value="mt">Mechatronics</li>
-                <li value="mc">Miscellaneous</li>
-                <li value="bbc">BBC</li>
+                
             </ul>
             <div id="events">
                 <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
+                    <div class="back-a" style="background: #FCFBF9"></div>
+                    <div class="back-b" style="background: #FCFBF9"></div>
+                    <div class="back-c" style="background: #FCFBF9"></div>
+                    <div class="back-d" style="background: #FCFBF9"></div>
+                    <div class="content" onclick="sad(this)" style="background-image: url(images/IDRL.jpg)"></div>
                 </div>
                 <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
+                    <div class="back-a" style="background: #7FAE41"></div>
+                    <div class="back-b" style="background: #7FAE41"></div>
+                    <div class="back-c" style="background: #7FAE41"></div>
+                    <div class="back-d" style="background: #7FAE41"></div>
+                    <div class="content" onclick="sad(this)" style="background-image: url(images/dhiti.png)"></div>
                 </div>
                 <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
+                    <div class="back-a" style="background: #FFFFFF"></div>
+                    <div class="back-b" style="background: #FFFFFF"></div>
+                    <div class="back-c" style="background: #FFFFFF"></div>
+                    <div class="back-d" style="background: #FFFFFF"></div>
+                    <div class="content" onclick="sad(this)" style="background-image: url(images/aic.png)"></div>
                 </div>
                 <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
-                </div>
-                <div class="event">
-                    <div class="back-a"></div>
-                    <div class="back-b"></div>
-                    <div class="back-c"></div>
-                    <div class="back-d"></div>
-                    <div class="content" onclick="sad(this)"></div>
+                    <div class="back-a" style="background: #94BFD1"></div>
+                    <div class="back-b" style="background: #94BFD1"></div>
+                    <div class="back-c" style="background: #94BFD1"></div>
+                    <div class="back-d" style="background: #94BFD1"></div>
+                    <div class="content" onclick="sad(this)" style="background-image: url(images/raw.png)"></div>
                 </div>
             </div>
             <div id="descs">
                 <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
+                    <h3>Indian Drone Racing League</h3>
+                    <span></span>
                 </div>
                 <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
+                    <h3>Dhiti</h3>
+                    <span></span>
                 </div>
                 <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
+                    <h3>Apogee Innovation Challenge</h3>
+                    <span></span>
                 </div>
                 <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
-                </div>
-                <div class="desc">
-                    <h3>This is title</h3>
-                    <span>This is subtitle</span>
+                    <h3>Robots at War</h3>
+                    <span></span>
                 </div>
             </div>
         </div>
     </section>
     <div class="flex">
         <div class="head">
-            <span id="heading">Heading here</span>
+            <span id="heading"></span>
             <span id="close"><div id="closea"></div><div id="closeb"></div></span>
         </div>
         <div class="flex-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a nunc vitae mauris ultrices tincidunt id eu orci. Praesent porta lacinia enim, eu hendrerit felis tincidunt in. Fusce egestas lacus lacus, dignissim congue est sollicitudin nec. Aenean viverra ipsum mi, vitae egestas erat accumsan quis. Aliquam accumsan mi id tortor consectetur vehicula. Nam vulputate vitae eros et vulputate. Quisque commodo erat non metus egestas accumsan. Fusce rhoncus urna non fringilla euismod.</p> </div>
+    <p></p> </div>
     </div>
     <script src="js/basic.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/flex.js"></script>
     <script type="text/javascript">
+        $(function(){
+            $.ajax({
+                url: "https://bits-apogee.org/2018/api/get_categories/",
+                method: "GET",
+                success: function(data) {
+                    window.cats = data.categories.sort(function(e1, e2){return e1.id - e2.id});
+                    for (var i = 0; i < cats.length; i++) {
+                        $("#eventCat").append("<li _id="+cats[i].id+" class=\""+(cats[i].id==1?"selected":"")+"\">"+cats[i].name+"</li>");
+                    }
+                    loadEvents();
+                },
+                error: function(e) {
+                    console.error(e);
+                    alert("An error occured: "+e);
+                }
+            });
+            function loadEvents() {
+                $.ajax({
+                    url: "https://bits-apogee.org/2018/api/events/",
+                    method: "GET",
+                    success: function(data) {
+                        for(var i = 0; i < cats.length; i++) {
+                            var cat = cats[i];
+                            cat.events = data.filter(function(el) {return el.category_name == cat.name;});
+                        }
+                    },
+                    error: function(e) {
+                        console.log("An error occured: "+e);
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
