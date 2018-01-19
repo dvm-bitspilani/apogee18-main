@@ -3,7 +3,7 @@ function makeEvent(id) {
     var f = c[0];
     var b = c[1];
     return '\
-    <div class="event" _b="'+b+'">\
+    <div class="event" _b="'+b+'" _id="'+id+'">\
         <div class="back-a" style="background: '+f+'"></div>\
         <div class="back-b" style="background: '+f+'"></div>\
         <div class="back-c" style="background: '+f+'"></div>\

@@ -1,5 +1,22 @@
 var flex =document.querySelector(".flex");
+
+
 function sad(el) {
+    $.ajax({
+        url: "https://bits-apogee.org/2018/api/events/"+$(el).parent().attr('_id')+"/",
+        method: "GET",
+        success: function(data) {
+            $("#fl_desc").html(data.content);
+            $("#fl_rules").html(data.rules);
+            $("#fl_contact").html(data.contact);
+            // $("#category").html(data.category_name);
+            $("#heading").html(data.name);
+        },
+        error: function(err) {
+            console.error(err);
+            alert("Error fetching event details. Check error console.");
+        }
+    });
     var e = el;
     for (var lx=0, ly=0;
     el != null;
@@ -15,13 +32,17 @@ function sad(el) {
     setTimeout(function(){
         flex.style.backgroundImage = "";
         flex.style.backgroundColor = $(e).parent().attr('_b');
+        $(".flex .head").fadeIn("fast");
+        $(".flex .flex-content").fadeIn("fast");
     },500);
 
 }
-    document.querySelector("#close").onclick = function()
-{
-    document.querySelector(".flex.active").className="flex";
 
+
+document.querySelector("#close").onclick = function() {
+    document.querySelector(".flex.active").className="flex";
+    $(".flex .head").fadeOut("fast");
+    $(".flex .flex-content").fadeOut("fast");
     setTimeout(()=>{document.querySelector(".flex").style.display="none"},300);
 
 }
