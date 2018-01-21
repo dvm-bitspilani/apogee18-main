@@ -39,16 +39,16 @@
 
 #background{
 	position: absolute;
-    top: -50vh;
-    left: -50vw;
-    width: 200vw;
-    height: 200vh;
-    z-index: -2;
-    background: url('../images/img2.jpg');
-	background-size: cover;
-	background-position-x: center;
-	
+	top: -75vh;
+	left: -50vw;
+	width: 200vw;
+	height: 260vh;
+	z-index: -2;
+	background: url('../images/img2.jpg');
+	background-position: center;
 	animation: flow 100s linear infinite;
+	/* transform: rotate(115deg); */
+	/* transform: scale(215.1,113.1); */
 }
 
 @keyframes flow{
@@ -74,3 +74,8 @@
 		border-width: 8px;
 	}
 }
+ul.hidden,footer ul
+{
+	font-weight: bold;
+}
+
