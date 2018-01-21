@@ -21,7 +21,7 @@ justify-content: center;
 .ctheading p
 {
 font-family: 'azo';
-color: red;
+color: rgba(84, 232, 173, 0.7);
 font-size: 4rem;
 text-align: center;
 padding-bottom: 3vh;

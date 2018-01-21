@@ -34,7 +34,7 @@ function open(){
          setTimeout(function(){ $('.preloader__mask').addClass('extra');
          $('.apogee_stensil').css('background-position', '60vw');
          setTimeout(function display(){   
-              $("#loader-container").fadeOut("slow");
+              document.querySelector("#loader-container").style.display="none";
               $("#main-container").fadeIn("slow");
          },2000)
     console.log("ldd");},2000)})
