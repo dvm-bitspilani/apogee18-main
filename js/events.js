@@ -1,5 +1,5 @@
 function makeEvent(id) {
-    var c = window.colors[id] || ["#FFFFFF","#FFFFFF"]
+    var c = window.colors[id] || ["#FFFFFF","#000000"]
     var f = c[0];
     var b = c[1];
     return '\
