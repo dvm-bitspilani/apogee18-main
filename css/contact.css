@@ -1,137 +1,130 @@
-.ctwrapper {
+#main {
 	display: flex;
 	width: 100%;
 	height: 100%;
-	margin-top: -70px;
-}
-.ctcontainer
-{
-display: flex;
-justify-content: center;
-flex-direction: column;
-margin: auto;
-overflow: hidden;
-width: 100%;
-}
-.ctheading
-{
-display: flex;
-justify-content: center;
-}
-.ctheading p
-{
-font-family: 'azo';
-color: rgba(84, 232, 173, 0.7);
-font-size: 4rem;
-text-align: center;
-padding-bottom: 3vh;
-position: relative;
-z-index: 3;
-font-weight:bold;
-}
-.ctheading p:before
-{	font-family: 'azo';
-	position: absolute;
-	content: 'contact';
-	top: -4px;
-	color: white;
-	font-weight: bold;
-}
-.ctcontent
-{	display: flex;
+	align-items: center;
 	justify-content: center;
-	margin:0 auto;
-}
-.ctcontent p:nth-child(1) {
-	font-size: 1.4rem;
-	text-decoration: underline;
-}
-.ctcontent p:nth-child(2) {
-	font-size: 1.3rem;
-}
-.ctcontent p:nth-child(2) {
-	font-size: 1.2rem;
-}
-.ctitem
-{
-	margin: 40px -30px;
-	height: 300px;
-	min-width: 400px;
-	color: black;
-	background-color: transparent;
-	display: flex;
 	flex-direction: column;
 }
-#ctimg {
-	height: 200px;
-	background: #fff url(../images/dp.png) no-repeat center;
-}	
-#ctimg
-{
-	margin-left: 50px;
+#head {
+	font-size: 100px;
+	position: relative;
+	width: 400px;
+	height: 150px;
+}
+#head label {
+	color: #fff;
+	font-family: azo;
 	position: absolute;
-	content: ' ';
-	min-width: 300px;
-	height: 200px;
+}
+#head label:nth-child(1) { color: #ae0064; margin-top: 10px; }
+#head label:nth-child(2) { color: #fe077b; margin-top: 5px; }
+
+#content {
+	width: 95%;
+	color: #fff;
+	text-align: center;
+	max-height: 70vh;
+	overflow-y: scroll;
+}
+
+#content p {
+	margin: 10px 0;
+	font-size: 1.45rem;
+	font-family: azoi;
+}
+
+#bande {
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    height: 300px;
+    width: calc(100% - 40px);
+    margin: 10px;
+    padding: 0;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective:100px;
+}
+.banda {
 	background-color: white;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+    min-width: 300px;
+    height: calc(100% - 40px);
+    margin: 0 20px;
+    float: left;
+    /* transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1); */
+    cursor: pointer;
+    /* position: relative; */
 }
-#ctinfo
-{	margin-top: 200px;
-	min-width:300px;
-	height: 100px;
-	color:white; 
+@media all and (max-width: 500px) {
+    .banda {min-width: 85vw ; max-width: 85vw ;}
+}
+
+#descs {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+    width: calc(100% - 40px);
+    margin: 10px;
+    padding: 0;
+    align-items: center;
+    perspective: 100px;
+}
+
+@media all and (max-width: 600px) {
+	#events {
+        width: 100%;
+        margin: -75px 20px 0 20px;
+    }
+    #descs {
+        width: 100%;
+        margin: -20px 20px 0 20px;
+    }
+    .visible {
+        display: block !important;
+    }
+}
+
+.desc {
+    background: #f25;
+    min-width: 300px;
+    height: calc(100%);
+    margin: 0 20px;
+	color: #fff;
 	display: flex;
-	flex-direction: column;
+	align-items: center;
 	justify-content: center;
+	position: relative;
+	flex-direction: column;
 }
-#ctinfo p
-{
-	margin:auto;
+
+.desc span {
+	margin: 0px 0;
 }
-#nextCt {
-	display: block;
-	position: absolute;
-	font-weight: bold;
-	top: 90%;
-	right: 10px;
-	background: #fff;
-	color: #000;
-	font-size: 1.2rem;
-	padding: 5px 10px;
-	display: none;
+
+@media all and (max-width: 500px) {
+    .desc {
+        min-width: 85vw; max-width: 85vw;
+    }
 }
-#prevCt {
-	display: block;
-	position: absolute;
-	top: 90%;
-	left: 10px;
-	background: #ffffff;
-	color: black;
-	font-weight: bold;
-	font-size: 1.2rem;
-	padding: 3px 8px;
-	display: none;
+.desc h3 {
+    font-size: 2rem;
 }
-@media only screen and (max-width: 700px)
-{	#nextCt,#prevCt
-	{
-		display: block;
-	}
-	.ctcontainer
-{
-	display: flex;
-    justify-content: center;
-    height: 95vh;
-    flex-direction: column;
-    flex-wrap: wrap;
+.desc span {
+    font-size: 1.4rem;
 }
-.ctheading p
-{
-	padding:0px;
-	font-size: 2rem;
+.desc.active {
+    transform: translateZ(4px) translateY(10px);
 }
-.ctcontainer
-{	
-	height: 100vh;
+
+.lilbig {
+	font-size: 1.6rem !important;
 }
+
+.lilsmall {
+	font-size: 1.2rem !important;
 }

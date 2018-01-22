@@ -4,5 +4,9 @@
 }
 @font-face {
     font-family: 'azo';
-    src: url(../fonts/Roboto_Condensed/Bold.otf);
+    src: url(../fonts/bold.otf);
+}
+@font-face {
+    font-family: 'azoi';
+    src: url(../fonts/italic.otf);
 }

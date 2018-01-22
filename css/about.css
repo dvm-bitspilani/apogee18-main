@@ -1,57 +1,36 @@
-*
-{
-	padding: 0px;
-	margin:0px;
-}
-body
-{
-	width: 100vw;
-	height: 100vh;
-}
-.abtwrapper
-{	
+#main {
 	display: flex;
 	width: 100%;
 	height: 100%;
-}
-.abtcontainer
-{
-	display: flex;
-    justify-content: center;
-    flex-direction: column;
-	margin: auto;
-}
-.abtheading
-{
-	display: flex;
+	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 }
-.abtheading p
-{font-family: 'azo';
-color: rgba(84, 232, 173, 0.7);
-font-size: 4rem;
-text-align: center;
-padding-bottom: 3vh;
-position: relative;
-z-index: 3;
-font-weight:bold;
+#head {
+	font-size: 100px;
+	position: relative;
+	width: 300px;
+	height: 150px;
 }
-.abtheading p:before
-{	font-family: 'azo';
+#head label {
+	color: #fff;
+	font-family: azo;
 	position: absolute;
-	content: 'about';
-	top: -4px;
-	color: white;
-	font-weight: bold;
 }
-.abtcontent
-{	display: flex;
-	justify-content: center;
-	color: white;
-	overflow: auto;
-	max-height:45vh;
+#head label:nth-child(1) { color: #00b46c; margin-top: 10px; }
+#head label:nth-child(2) { color: #07fe8d; margin-top: 5px; }
+
+#content {
+	width: 90%;
+	max-width: 700px;
+	color: #fff;
+	text-align: center;
+	max-height: 70vh;
+	overflow-y: scroll;
 }
-.abtcontent p 
-{	
-	padding: 0 10%;
+
+#content p {
+	margin: 10px 0;
+	font-size: 1.45rem;
+	font-family: azoi;
 }

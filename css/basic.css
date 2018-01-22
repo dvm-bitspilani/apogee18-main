@@ -31,7 +31,9 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #333333;
+    background: #333333 url(../images/rg1.svg);
+    background-size: 300% 300%;
+    background-position: center;
 }
 header {
     display: flex;
@@ -231,7 +233,7 @@ header ul li:before, footer ul li:before {
 
 }
 .line1,.line2,.line3{
-font-style: italic; 
+    font-family: azoi;
 text-align: center;
 }
 .line1{
@@ -327,3 +329,20 @@ text-align: center;
     }
 }
 
+ul li {
+	position: relative;
+}
+
+ul li::after {
+	display: block;
+	content: '';
+	width: 0;
+	height: 1px;
+	/* transform: translateX(-50%); */
+	background: #fff;
+	transition: all 0.2s ease-in-out;
+}
+
+ul li:hover::after {
+	width: 100%;
+}

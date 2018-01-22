@@ -16,7 +16,7 @@
 
 .techcont *, .techcont{
 	/*border: 1px solid #fff;*/
-	
+	font-family: azo;
 }
 
 .techcont{
@@ -76,6 +76,7 @@
 }
 ul.hidden,footer ul
 {
-	font-weight: bold;
+	font-family: azoi;
 }
+
 
