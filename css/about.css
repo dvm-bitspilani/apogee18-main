@@ -9,7 +9,7 @@
 #head {
 	font-size: 100px;
 	position: relative;
-	width: 300px;
+	width: 280px;
 	height: 150px;
 }
 #head label {
@@ -26,11 +26,22 @@
 	color: #fff;
 	text-align: center;
 	max-height: 70vh;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #content p {
 	margin: 10px 0;
 	font-size: 1.45rem;
 	font-family: azoi;
+}
+
+@media all and (max-width: 500px) {
+	#content p {
+		font-size: 1.2rem;
+	}
+	#head {
+		width: 210px;
+		height: 112px;
+		font-size: 75px;
+	}
 }
