@@ -17,30 +17,30 @@ function loading(){
    }
    else if(ldd == 0 && x >= 50)      
     { console.log("clr");
-      poie();
+      open();
       clearInterval(abc);
     }
    else if(ldd==1)
     { console.log("1");
-      alreadydone();
+      alreadyloaded();
       clearInterval(abc);}
      },100)
 }
 
-function poie(){
+function open(){
       console.log(ldd);
       $(window).load(function() {
          cover.style.width = "100%" ;console.log("exe")
          setTimeout(function(){ $('.preloader__mask').addClass('extra');
          $('.apogee_stensil').css('background-position', '60vw');
          setTimeout(function display(){   
-              $("#loader-container").fadeOut("slow");
+              document.querySelector("#loader-container").style.display="none";
               $("#main-container").fadeIn("slow");
          },2000)
     console.log("ldd");},2000)})
 }
 
-function alreadydone(){
+function alreadyloaded(){
        cover.style.width = "100%" ;
        setTimeout(function(){
            $('.preloader__mask').addClass('extra');

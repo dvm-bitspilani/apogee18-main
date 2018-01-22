@@ -73,7 +73,7 @@
     height: 100%;
     background: url("../images/apogee2.png") center no-repeat;
 background-size: contain;
-transition:all 1.5s cubic-bezier(.15,.3,.5,.7);
+transition:all 1.45s cubic-bezier(.15,.3,.5,.7);
 
 
 }
@@ -95,7 +95,7 @@ transition:all 1.5s cubic-bezier(.15,.3,.5,.7);
     height: 100%;
     background: url("../images/apogee.png")  no-repeat;
     background-position: -60vw ;
-    transition:all 2.5s cubic-bezier(.15,.3,.5,.7);
+    transition:all 2.1s cubic-bezier(.15,.3,.5,.7);
     background-size: contain;
    z-index: 1000;
 }

@@ -154,7 +154,8 @@
         top: 90%;
         right: 10px;
         background: #fff;
-        color: #333;
+        color: black;
+        font-weight: bold;
         font-size: 1.2rem;
         padding: 5px 10px;
     }
@@ -164,7 +165,8 @@
         top: 90%;
         left: 10px;
         background: #fff;
-        color: #333;
+        color:black;
+        font-weight: bold;
         font-size: 1.2rem;
         padding: 3px 8px;
     }
