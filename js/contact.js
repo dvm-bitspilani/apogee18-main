@@ -89,8 +89,8 @@ events.ontouchstart = function(e) {
 }
 
 events.ontouchmove = function(e) {
-    e.deltaX = e.changedTouches[0].screenX - touchX;
-    e.deltaY = e.changedTouches[0].screenY - touchY;
+    e.deltaX = 2*(e.changedTouches[0].screenX - touchX);
+    e.deltaY = 2*(e.changedTouches[0].screenY - touchY);
     touchX = e.changedTouches[0].screenX;
     touchY = e.changedTouches[0].screenY;
     scroll(e);
