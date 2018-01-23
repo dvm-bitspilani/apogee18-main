@@ -53,3 +53,4 @@ function alreadyloaded(){
        },2000)
 }
 var start = setTimeout(loading, 100);
+alreadyloaded();
