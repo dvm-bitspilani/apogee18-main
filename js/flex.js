@@ -7,7 +7,7 @@ function sad(el) {
         method: "GET",
         success: function(data) {
             $("#fl_desc").html(data.content);
-            $("#fl_rules").html(data.rules);
+            $("#fl_rules").html(data.rules + '<a href="./Rules_booklet.pdf" id="pdf">Download rules booklet</a>');
             $("#fl_contact").html(data.contact);
             // $("#category").html(data.category_name);
             $("#heading").html(data.name);

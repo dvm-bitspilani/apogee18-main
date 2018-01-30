@@ -96,8 +96,10 @@ setTimeout((function(){
     // console.log(newstr);
 
     // document.getElementById("techfest").innerHTML = "" + newstr + ""; 
-    // document.getElementById("techfest").innerHTML = wrapSpan(newstr); 
-    letterAnimation(document.querySelector("#techfest"), "techstyle")
+    // document.getElementById("techfest").innerHTML = wrapSpan(newstr);
+    if(window.letterAnimation != undefined)
+        letterAnimation(document.querySelector("#techfest"), "techstyle")
+    
     // letterAnimation(document.getElementById("techfest2"), "feststyle")
 
     // var mystr2 = document.getElementById("techfest2").innerHTML;

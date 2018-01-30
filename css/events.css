@@ -222,18 +222,6 @@
 }
 
 #pdf{
-    position: absolute;
-    bottom: 0;
-    right: 10px;
     color: #fff;
     text-decoration: none;
-    font-size: 1.3em;
-}
-
-@media all and (max-width: 500px) {
-    #pdf{
-        position: relative;
-        top: 21px;
-        right: 0;
-    }
 }
