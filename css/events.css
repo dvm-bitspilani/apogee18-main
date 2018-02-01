@@ -220,3 +220,8 @@
     height: 100vh;
     background-color: red;
 }
+
+#pdf{
+    color: #fff;
+    text-decoration: none;
+}
