@@ -33,7 +33,7 @@ workshops.forEach((el, i)=>{
 	           <div class='wsi'>\
 			      <div class='wsimage' style='background:" + el.background + "'>\
 			      </div>\
-			      <div id="+ ++i + " class='wstlt' ><p>" + el.name +"\
+			      <div id="+ ++i + " class='wstltWK' ><p>" + el.name +"\
 			      </p></div>\
 			      </div>\
 		</div>"
