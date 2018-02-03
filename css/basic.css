@@ -336,13 +336,16 @@ text-align: center;
         font-size: 2.5em;
     }
     footer{
+        top: -50px;
+    }
+}
+footer{
         -webkit-flex-direction: column-reverse;
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
-        top: -50px;
+        top: -20px;
         position: relative;
     }
-}
 
 ul li {
 	position: relative;
@@ -363,9 +366,14 @@ ul li:hover::after {
 }
 
 .offer{
-    padding: 20px;
+    display: block;
+    padding: 0 0 0 30px;
     color: #fff;
     font-size: 1.3em;
+}
+
+.offer .timer{
+    
 }
 
 .offer .timer .time-span{
