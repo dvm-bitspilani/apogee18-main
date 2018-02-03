@@ -95,7 +95,7 @@ console.log(workshop_info[box-1].name);
             <div>\
 	              <p class='infotext'>" + workshop_info[box-1].info +"\
 			      </p>\
-			      <p class='close' onclick='closebox()'><--\
+			      <p class='close' onclick='closebox()'><img src='img/back.svg'>\
 			      </p>\
 		</div>"        
 		
