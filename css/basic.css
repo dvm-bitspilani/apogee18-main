@@ -41,11 +41,18 @@ header {
     width: 100%;
     z-index: 10;
     /*height: 150px;*/
+    
     justify-content: space-between;
     padding: 25px;
     opacity: 0;
     animation: 0.5s appear ease-in forwards;
     animation-delay: 0.5s;
+}
+footer{
+    display: flex;
+    flex-direction:row;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
 }
 #logo {
     height: 75px;
@@ -80,6 +87,7 @@ footer ul{
     max-width: 100vw;
     position: relative;
     z-index: 10;
+    width: fit-content;
 }
 @media all and (max-width: 600px) {
     body {
@@ -327,6 +335,13 @@ text-align: center;
     .tech{
         font-size: 2.5em;
     }
+    footer{
+        -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        top: -50px;
+        position: relative;
+    }
 }
 
 ul li {
@@ -345,4 +360,18 @@ ul li::after {
 
 ul li:hover::after {
 	width: 100%;
+}
+
+.offer{
+    padding: 20px;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.offer .timer .time-span{
+    padding: 0 3px;
+    margin: 2px;
+    border-radius: 1px;
+    color: #fff;
+    background: rgba(255, 255, 255, .3)
 }
