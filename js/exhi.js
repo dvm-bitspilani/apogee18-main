@@ -31,9 +31,9 @@ var string = "";
 exhibitions.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimage' style='background:" + el.background + "'>\
+			      <div class='wsimageEVT' style='background:" + el.background + "'>\
+			      <p id="+ ++i + " class='wstltEVT' >" + el.name +"\
 			      </div>\
-			      <p id="+ ++i + " class='wstlt' >" + el.name +"\
 			      </p>\
 			      </div>\
 		</div>"
@@ -86,7 +86,7 @@ function closebox(){
 }
 // var box = document.querySelector(".wstlt");
 // function nm(){
-	$(".wstlt").click(function (e) {
+    $(".wsimageEVT").click(function (e) {
     console.log($(e.target).attr('id'));
     var box = $(e.target).attr('id');
     var string2 ="";
@@ -101,7 +101,7 @@ console.log(workshop_info[box-1].name);
             <div>\
 	              <p class='infotext'>" + workshop_info[box-1].info +"\
 			      </p>\
-			      <p class='close' onclick='closebox()'><--\
+			      <p class='close' onclick='closebox()'><img src='img/back.svg'>\
 			      </p>\
 		</div>"        
 		

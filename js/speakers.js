@@ -17,9 +17,9 @@ var string = "";
 speakers.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimage' style='background:" + el.background + "'>\
+			      <div class='wsimageSPKR' style='background:" + el.background + "'>\
 			      </div>\
-			      <p id="+ ++i + " class='wstlt' >" + el.name +"\
+			      <p id="+ ++i + " class='wstltSPKR' >" + el.name +"\
 			      </p>\
 			      </div>\
 		</div>"
