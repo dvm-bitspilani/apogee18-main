@@ -11,17 +11,17 @@ var exhibitions = [
   background:"url(images/puzzlebox.png)",
 },
 
-{ name:"INDIAN NARY",
-  background:"url(images/mitraBot.png)",
+{ name:"INDIAN NAVY",
+  background:"url(images/2.png)",
 },
 { name:"INSPIRED KARTERS",
-  background:"url(images/naobot.png)",
+  background:"url(images/2.png)",
 },
 { name:"IMPACTLABS",
-  background:"url(images/mitraBot2.png)",
+  background:"url(images/2.png)",
 },
 { name:"BSF-TSU",
-  background:"url(images/naoBot2.png)",
+  background:"url(images/2.png)",
 },
 
 
@@ -31,8 +31,8 @@ var string = "";
 exhibitions.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimageEVT' style='background:" + el.background + "'>\
-			      <p id="+ ++i + " class='wstltEVT' >" + el.name +"\
+			      <div class='wsimageEVT' id=" + ++i + " style='background:" + el.background + "'>\
+			      <p  class='wstltEVT' id=" + ++i + " >" + el.name +"\
 			      </div>\
 			      </p>\
 			      </div>\
@@ -86,7 +86,9 @@ function closebox(){
 }
 // var box = document.querySelector(".wstlt");
 // function nm(){
-    $(".wsimageEVT").click(function (e) {
+    $(".wsimageEVT").click(openinfo);
+    $(".wstltEVT").click(openinfo);
+    function openinfo(e){
     console.log($(e.target).attr('id'));
     var box = $(e.target).attr('id');
     var string2 ="";
@@ -110,7 +112,7 @@ console.log(workshop_info[box-1].name);
 document.getElementById("boxcontainer").innerHTML = string2;
 $("#boxcontainer").fadeIn(1000) ;
 
-});
+};
 
 
 // var desc1 = document.querySelector(".desc");

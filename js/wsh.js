@@ -20,7 +20,7 @@ var workshops = [
 { name:"ECO & FIN WORKSHOP",
   background:"url(images/mitraBot2.png)",
 },
-{ name:"IMPACTSLAB",
+{ name:"IMPACTLABS",
   background:"url(images/naoBot2.png)",
 },
 
@@ -33,7 +33,7 @@ workshops.forEach((el, i)=>{
 	           <div class='wsi'>\
 			      <div class='wsimage' style='background:" + el.background + "'>\
 			      </div>\
-			      <div id="+ ++i + " class='wstltWK' ><p>" + el.name +"\
+			      <div  class='wstltWK' id=" + ++i + "><p id="+ ++i + ">" + el.name +"\
 			      </p></div>\
 			      </div>\
 		</div>"
@@ -80,7 +80,9 @@ function closebox(){
 }
 // var box = document.querySelector(".wstlt");
 // function nm(){
-	$(".wstlt").click(function (e) {
+	 
+    $(".wstltWK").click(openinfo);
+    function openinfo(e){
     console.log($(e.target).attr('id'));
     var box = $(e.target).attr('id');
     var string2 ="";
@@ -104,7 +106,7 @@ console.log(workshop_info[box-1].name);
 document.getElementById("boxcontainer").innerHTML = string2;
 $("#boxcontainer").fadeIn(1000) ;
 
-});
+};
 
 
 // var desc1 = document.querySelector(".desc");

@@ -74,7 +74,7 @@ flex-direction:row;
 	align-items:flex-start;
 	height: fit-content;
 	width:fit-content; 
-
+cursor: pointer;
 }
 
 .wsimage,.wsimageSPKR{
@@ -87,15 +87,23 @@ flex-direction:row;
 .wsimageSPKR
 {
 height:226px;
+background-color: #fe077b;
 }
 .wsimageEVT
 {
 height: 226px;
 width: 221px;
-background-color: blue;
+background: #fe077b;
 }
 .wstltSPKR
-{background: #3a3636;color:white;width:100%;padding:5px 0px;font-weight: bold;font-size: 1.3rem;text-align: center;}
+{background:rgba(0,0,0,.4);
+	color:white;
+	width:100%;
+	padding:5px 0px;
+	font-weight: bold;
+	font-size: 1.3rem;
+
+	text-align: center;}
 
 .wstlt,.wstltEVT,{text-align: center;height: fit-content;width: 221px;cursor: pointer;margin-top: 7px;background-color: #7b7879;font-size: 1.5em;display:flex;justify-content:center;}
 .wstltEVT
