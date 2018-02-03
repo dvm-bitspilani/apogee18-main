@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'azo';
+    src: url(../fonts/bold.otf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #333333;
+    background-image: url('../img/rg1.svg');
+    background-size: 300% 300%;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: azo;
+    position: relative;
+    width: 100%:;
+    /* margin-top: 5%; */
+}
+
+#head div span{
+    position: absolute;
+    font-size: 100px;
+    font-family:'azo';
+
+}
+#head2 span:nth-child(1){
+    color: #ffffff;
+    z-index: 10;
+}
+#head2 span:nth-child(2){
+    transform: translateY(5px);
+    color: #07fe8d;
+    z-index: 5;
+}
+#head2 span:nth-child(3){
+    transform: translateY(10px);
+    color: #00b46c;
+    z-index: -10;
+}
+
+#mains{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.sponsor-wrapper{
+    min-height: 300px;
+    width: 300px;
+    /*border: 1px solid white;*/
+    margin: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.spons-logo{
+    flex-grow: 1;
+    /*border: 1px solid magenta;*/
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.spons-name{
+    padding: 3px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*.spons-logo:nth-child(1){
+    background-image: url('../img/001STUFFLOGO-01.png');
+}
+
+.spons-logo:nth-child(2){
+    background-image: url('../img/HalfBakedBeans.png');
+}
+
+.spons-logo:nth-child(3){
+    background-image: url('../img/IgniteEngineers.png');
+}
+
+.spons-logo:nth-child(4){
+    background-image: url('../img/KnowAFest.com.png');
+}
+
+.spons-logo:nth-child(5){
+    background-image: url('../img/logo.jpg');
+}
+
+.spons-logo:nth-child(6){
+    background-image: url('../img/ATLogoPNG');
+}
+
+.spons-logo:nth-child(7){
+    background-image: url('../img/ScientificIndiaLogo.jpg');
+}
+
+.spons-logo:nth-child(8){
+    background-image: url('../img/TCFLOGO.png');
+}
+*/
+.s1{
+    background-image: url('../img/001STUFFLOGO-01.png');
+}
+
+.s2{
+    background-image: url('../img/HalfBakedBeans.png');
+}
+
+.s3{
+    background-image: url('../img/IgniteEngineers.png');
+}
+
+.s4{
+    background-image: url('../img/KnowAFest.com.png');
+}
+
+.s5{
+    background-image: url('../img/logo.jpg');
+}
+
+.s6{
+    background-image: url('../img/ATLogoPNG.png');
+}
+
+.s7{
+    background-image: url('../img/ScientificIndiaLogo.jpg');
+}
+
+.s8{
+    background-image: url('../img/TCFLOGO.png');
+}
+
+/*.spons-logo:nth-child(9){
+    background-image: url('001STUFFLOGO-01.png');
+}
+.spons-logo:nth-child(10){
+    background-image: url('001STUFFLOGO-01.png');
+}*/
+
+
