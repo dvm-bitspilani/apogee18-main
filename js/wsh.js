@@ -52,12 +52,37 @@ var workshop_info = [
 },
 
 { name:"3",
-  info:"<b style='font-size:1.25em'>2-DAY WORKSHOP ON IOT BY CETPA\
-        <br/><br/>For more information see the pdf <a href='./extras/IOT.pdf'> more info</a>",
-},
+  info:"<b style='font-size:1.5em'>2-DAY WORKSHOP ON IOT</b> \
+        <br/><br/><b style=' font-size:1.25em;text-decoration:underline'>Session: 1. Introductions To Industrial IOT</b>\
+        <br/><br/><span style='text-align:right'> Introduction Of Industrial IOT.</span>\
+        <br/><span style='text-align:right'> Classification Of Industrial IOT.</span>\
+        <br/><span style='text-align:right'> History Of Automation.</span>\
+        <br/><span style='text-align:right'> Scope Of Industrial IOT.</span>\
+        <br/><span style='text-align:right'> Career Prospects of IOT.</span>\
+         <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 2. Introductions To Controlling Devices</b>\
+        <br/><br/><span style='text-align:left'> Relay And Electrical Control.</span>\
+        <br/><span style='text-align:left'> Electronic Controller And Pid Controller.</span>\
+        <br/><span style='text-align:left'> Programmable Logic Controller (Plc).</span>\
+        <br/><span style='text-align:left'> Scada (Tools & Usage)</span>\
+         <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 3. Exposure To Relay System</b>\
+        <br/><br/><span style='text-align:left'> Introduction Of Industrial IOT.</span>\
+        <br/><span style='text-align:left'> Relay Based Control System</span>\
+        <br/><span style='text-align:left'> Switching Theory.</span>\
+        <br/><span style='text-align:left'> Introduction To Timer And Counter.</span>\
+        <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 4.Introduction To PLC</b>\
+        <br/><br/><span style='text-align:left'> Hardware Architecture.</span>\
+        <br/><span style='text-align:left'> Advantage Over Other Controller.</span>\
+        <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 5. Query & Doubt Clearance Session</b>\
+        <br/><br/><span style='text-align:left'> Query & Doubt Clearance Session.</span>\
+        <br/><span style='text-align:left'> Competition Based On Industrial</span>\
+        <br/><span style='text-align:left'> Q & A Session</span>\
+        <br/><span style='text-align:left'> Awards & Certificates Of Honour To Winners.</span>\
+        <br/><span style='text-align:left'> Certificates Of Appreciation To Selected Participants.</span>\
+        <br/><span style='text-align:left'> Certificates Of Participation To All Participants.</span>",
+ },
 
 { name:"4",
-  info:" <b style='font-size:1.25em'>2-DAY WORKSHOP ON ANSYS BY CETPA\
+  info:" <b style='font-size:1.25em'>2-DAY WORKSHOP ON ANSYS\
         <br/><br/>For more information see the pdf <a href='./extras/Cloud Computing.pdf'> more info</a>",
 },
 { name:"5",
