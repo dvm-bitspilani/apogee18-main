@@ -1,14 +1,14 @@
 var speakers = [
-{name:"DANIELLE FIENBERG",
- background:"url(images/1.png)",
+{name:"DANIELLE FEINBERG",
+ background:"url(images/DANIELLE.png)",
  },
 
 { name:"RAVI SUBRAMANIYAM",
-  background:"url(images/2.png)",
+  background:"url(images/RAVSUB.png)",
 },
 
 { name:"VASU PREMLANI",
-  background:"url(images/3.png)",
+  background:"url(images/VASU.png)",
 },
 
 ]
@@ -17,7 +17,7 @@ var string = "";
 speakers.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimageSPKR' id=" + ++i + "style='background:" + el.background + "'>\
+			      <div class='wsimageSPKR' id=" + ++i + " style='background:" + el.background + "'>\
 			      </div>\
 			      <p id="+ ++i + " class='wstltSPKR' >" + el.name +"\
 			      </p>\

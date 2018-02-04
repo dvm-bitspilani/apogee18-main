@@ -48,7 +48,7 @@ var workshop_info = [
 },
 
 { name:"2",
-  info:"",
+  info:"<b style='font-size:2em'>Will be updated soon</b>",
 },
 
 { name:"3",
@@ -83,21 +83,21 @@ var workshop_info = [
 
 { name:"4",
   info:" <b style='font-size:1.25em'>2-DAY WORKSHOP ON ANSYS\
-        <br/><br/>For more information see the pdf <a href='./extras/Cloud Computing.pdf'> more info</a>",
+        <br/><br/>For more information see the pdf\
+        <br/> <a href='./extras/ANSYS.pdf'> more info</a>",
 },
 { name:"5",
   info:"<b style='font-size:1.25em'>2-DAY WORKSHOP ON CLOUD COMPUTING BY CETPA\
-        <br/><br/>For more information see the pdf <a href='./extras/Cloud Computing.pdf'> more info</a>",
+        <br/><br/>For more information see the pdf\
+        <br/> <a href='./extras/Cloud Computing.pdf'> more info</a>",
 },
 { name:"6",
-  info:"url(images/mitrabot.jpg)",
+  info:"<b style='font-size:2em'>Will be updated soon</b>",
 },
 { name:"7",
-  info:"url(images/naobot.jpg)",
+  info:"<b style='font-size:2em'>Will be updated soon</b>",
 },
-{ name:"8",
-  info:" Gone are the days when robots were just a part of sci-fi! Now, not only have they transcended into reality, but will soon be as close to us as Doraemon was to Nobita!So, this February, gear up to be dazzled by the extraordinary abilities of this amazing human creation!",
-},
+
 
 ]
 function closebox(){
