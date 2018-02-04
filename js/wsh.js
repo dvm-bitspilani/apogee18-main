@@ -92,7 +92,34 @@ var workshop_info = [
         <br/> <a href='./extras/Cloud Computing.pdf'> more info</a>",
 },
 { name:"6",
-  info:"<b style='font-size:2em'>Will be updated soon</b>",
+  info:'<b>DALAL STREET EXCLUSIVE</b>\
+\
+Event 1: BSE Ltd. Workshop<br>\
+A 3 hour extensive workshop jointly conducted by the Bombay Stock Exchange & the Securities & Exchange Board of India (SEBI) on "Trading in the Stock Markets".\
+To cover topics such as :<br>\
+Introduction to Savings & Investments<br>\
+Basics of Budgeting, Inflation effects on Investments, Risk & Return<br>\
+Choosing the Right Investment Options<br>\
+Asset Allocation Strategies & various products available<br>\
+Investor Protection & Grievance Redressal Mechanism.<br>\
+Venue: NAB Audi<br>\
+Incentives: Certificate of Participation to all.<br>\
+\
+Established in 1875, the BSE is Asia\'s 1st Stock Exchange and the world\'s fastest with a median trade speed of 6 microseconds. With its Screen\ based Trading platform BOLT, the exchange handles over 8 Million daily transactions totaling a Market Capitalization of over $ 2 Trillions.\
+<br><br>\
+Event 2: \'SMiLE\'\
+\
+Presenting this APOGEE, at the BITS Business Conclave, India\'s renowned and one of the most successful Stock Market Gurus of all time. Learn from the mantras of the "Market Master" himself & enrich your Stock Portfolios. <br>\
+\
+Invest Like a Bull, Sit Like a Bear & Watch Like an Eagle !!<br>\
+Venue: NAB Audi<br>\
+\
+DATE : 23rd February 2018.<br>\
+TIME : 1000 - 1300 Hours.<br>\
+\
+Cost of Workshops - Nil. <br>\
+Pre Requisites - None. (Open for all Students, Faculty, Staff.)<br>\
+',
 },
 { name:"7",
   info:"<b style='font-size:2em'>Will be updated soon</b>",
