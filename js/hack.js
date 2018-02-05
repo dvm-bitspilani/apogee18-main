@@ -11,10 +11,10 @@ var string = "";
 hackathons.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimage' style='background:" + el.background + "'>\
+			      <a style = 'text-decoration:none;' href = 'https://www.bits-apogee.org/ibmhackathon'><div class='wsimage' style='background:" + el.background + "'>\
 			      </div>\
 			      <div  class='wstltWK' id=" + ++i + "><p id="+ ++i + ">" + el.name +"\
-			      </p></div>\
+			      </p></div></a>\
 			      </div>\
 		</div>"
 })
@@ -38,7 +38,7 @@ function closebox(){
 // var box = document.querySelector(".wstlt");
 // function nm(){
 	 
-    $(".wstltWK").click(openinfo);
+    //$(".wstltWK").click(openinfo);
     function openinfo(e){
     console.log($(e.target).attr('id'));
     var box = $(e.target).attr('id');
