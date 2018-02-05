@@ -49,6 +49,7 @@ var events = document.querySelector("#events");
 var descs = document.querySelector("#descs");
 
 function scroll(e) {
+console.log(e.target);
 var event1 = document.querySelector(".event");
 var desc1 = document.querySelector(".desc");
 var n = document.querySelectorAll(".event").length;
@@ -77,7 +78,7 @@ function resetEvents() {
 var allevents = document.querySelectorAll('.event');
 var current;
 
-addWheelListener(document.body,scroll);
+addWheelListener(document.getElementById("main"),scroll);
 addWheelListener(events,scroll);
 addWheelListener(descs,scroll);
 
