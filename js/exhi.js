@@ -21,7 +21,7 @@ var exhibitions = [
   background:"url(images/imlab.jpg)",
 },
 { name:"BSF-TSU",
-  background:"url(images/bsf.jpg)",
+  background:"url(images/bfg.jpg)",
 },
 
 
