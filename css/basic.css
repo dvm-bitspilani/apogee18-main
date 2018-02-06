@@ -83,7 +83,7 @@ header ul , footer ul{
 
 footer ul{
     justify-content: flex-start;
-    padding: 20px;
+    padding: 5px 20px;
     max-width: 100vw;
     position: relative;
     z-index: 10;
@@ -344,9 +344,9 @@ text-align: center;
     }
 }
 footer{
-        -webkit-flex-direction: column-reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
+        /* -webkit-flex-direction: column-reverse; */
+            /* -ms-flex-direction: column-reverse; */
+                /* flex-direction: column-reverse; */
         top: -20px;
         position: relative;
     }
