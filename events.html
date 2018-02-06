@@ -118,7 +118,7 @@
                 method: "GET",
                 success: function(data) {
                     window.cats = data.categories.sort(function(e1, e2){return e1.id - e2.id});
-                    for (var i = 0; i < cats.length; i++) {
+                    for (var i = 0; i < 15; i++) {
                         $("#eventCat").append("<li _id="+cats[i].id+" class=\""+(cats[i].id==1?"selected":"")+"\">"+cats[i].name+"</li>");
                     }
                     loadEvents();

@@ -124,7 +124,7 @@ height:226px !important;
 .infodata{
 	height: 100vh;
 	width: 97.25vw;
-	background: #333333 url(../images/rg1.svg);
+	background: #333333;
 	background-size: 200% 200%;
     background-position: center;
 	/*border:2px solid;*/
