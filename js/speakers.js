@@ -5,6 +5,12 @@ var speakers = [
 	background:"url(images/DANIELLE.png)",
  },
 
+ {
+	name:"VASU PREMLANI",
+	desc: "Stand-up comedian and Environmentalist",
+  background:"url(images/VASU.png)",
+},
+
 {
 	name:"RAVI SUBRAMANIYAM",
 	desc: "Bestselling Thriller Author",
@@ -12,7 +18,73 @@ var speakers = [
 },
 
 {
-	name:"VASU PREMLANI",
+	name:"SUDHA MENON",
+	desc: "Author and Columnist",
+  background:"url(images/SUDHA.jpg)",
+},
+
+{
+	name:"GURMEHAR KAUR",
+	desc: "Indian Student Activist",
+  background:"url(images/GURMEHAR.jpg)",
+},
+
+{
+	name:"DAVID STORK",
+	desc: "Distinguished Research Scientist",
+  background:"url(images/DAVID.png)",
+},
+
+{
+	name:"ACM 1",
+	desc: "Stand-up comedian and Environmentalist",
+  background:"url(images/VASU.png)",
+},
+
+{
+	name:"ACM 2",
+	desc: "Stand-up comedian and Environmentalist",
+  background:"url(images/VASU.png)",
+},
+
+{
+	name:"ACM 3",
+	desc: "Stand-up comedian and Environmentalist",
+  background:"url(images/VASU.png)",
+},
+
+{
+	name:"SHRADHA SHARMA",
+	desc: "CEO & Founder, YourStory",
+  background:"url(images/SHRADHA.jpg)",
+},
+
+{
+	name:"VINEET BAJPAI",
+	desc: "Author of National Bestsellers - Pralay and Harappa",
+  background:"url(images/VINEET.jpg)",
+},
+
+{
+	name:"BBC 1",
+	desc: "Stand-up comedian and Environmentalist",
+  background:"url(images/VASU.png)",
+},
+
+{
+	name:"BBC 2",
+	desc: "Stand-up comedian and Environmentalist",
+  background:"url(images/VASU.png)",
+},
+
+{
+	name:"BBC 3",
+	desc: "Stand-up comedian and Environmentalist",
+  background:"url(images/VASU.png)",
+},
+
+{
+	name:"BBC 4",
 	desc: "Stand-up comedian and Environmentalist",
   background:"url(images/VASU.png)",
 },
@@ -23,7 +95,7 @@ var string = "";
 speakers.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimageSPKR' id=" + ++i + " style='background:" + el.background + "'>\
+			      <div class='wsimageSPKR' id=" + ++i + " style='background:" + el.background + "; background-size: cover; background-position: center'>\
 			      </div>\
 			      <p id="+ ++i + " class='wstltSPKR' >" + el.name +"\
 			      </p>\
