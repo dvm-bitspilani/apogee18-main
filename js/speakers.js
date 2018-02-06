@@ -36,21 +36,27 @@ var speakers = [
 },
 
 {
-	name:"ACM 1",
-	desc: "Stand-up comedian and Environmentalist",
-  background:"url(images/VASU.png)",
+	name:"ABHISHEK SYAL",
+	desc: "",
+  background:"url(images/ABHISHEK.jpg)",
 },
 
 {
-	name:"ACM 2",
-	desc: "Stand-up comedian and Environmentalist",
-  background:"url(images/VASU.png)",
+	name:"NINA GUPTA",
+	desc: "Indian Actress",
+  background:"url(images/NINA.jpg)",
 },
 
 {
-	name:"ACM 3",
-	desc: "Stand-up comedian and Environmentalist",
-  background:"url(images/VASU.png)",
+	name:"SACHIN LODHA",
+	desc: "",
+  background:"url(images/)",
+},
+
+{
+	name:"PK PONNURANGAM",
+	desc: "IIIT - Delhi",
+  background:"url(images/PK.jpg)",
 },
 
 {
@@ -66,27 +72,27 @@ var speakers = [
 },
 
 {
-	name:"BBC 1",
-	desc: "Stand-up comedian and Environmentalist",
-  background:"url(images/VASU.png)",
+	name:"VISHAL VITHAL KAMAT",
+	desc: "Director, Kamat Hotels",
+  background:"url(images/KAMAT.jpg)",
 },
 
 {
-	name:"BBC 2",
-	desc: "Stand-up comedian and Environmentalist",
-  background:"url(images/VASU.png)",
+	name:"VIJAY KISHANLAL KEDIA",
+	desc: "Investor",
+  background:"url(images/KEDIA.jpg)",
 },
 
 {
-	name:"BBC 3",
-	desc: "Stand-up comedian and Environmentalist",
-  background:"url(images/VASU.png)",
+	name:"SANJIV KAPOOR",
+	desc: "",
+  background:"url(images/)",
 },
 
 {
-	name:"BBC 4",
-	desc: "Stand-up comedian and Environmentalist",
-  background:"url(images/VASU.png)",
+	name:"MANASI KIRLOSKAR",
+	desc: "",
+  background:"url(images/MANASI.jpg)",
 },
 
 ]
