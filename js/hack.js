@@ -46,7 +46,7 @@ function closebox(){
    
 console.log(hacks_info[box-1].name);
 	string2 += " <div class='heading'>\
-                  <div id='head2hack'>\
+                  <div id='head'>\
                 <label>" + hackathons[box-1].name +"</label>\
                 <label>" + hackathons[box-1].name +"</label>\
                 <label>" + hackathons[box-1].name +"</label>\
