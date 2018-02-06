@@ -42,9 +42,9 @@ var speakers = [
 },
 
 {
-	name:"NINA GUPTA",
+	name:"NEENA GUPTA",
 	desc: "Indian Actress",
-  background:"url(images/NINA.jpg)",
+  background:"url(images/NEENA.jpg)",
 },
 
 {
