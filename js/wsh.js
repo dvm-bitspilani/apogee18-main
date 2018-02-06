@@ -17,7 +17,7 @@ var workshops = [
 { name:"CLOUD COMPUTING",
   background:"url(images/naobot.png)",
 },
-{ name:"ECO & FIN WORKSHOP",
+{ name:"BSE Trading",
   background:"url(images/mitraBot2.png)",
 },
 { name:"IMPACTLABS",
