@@ -1,6 +1,8 @@
 var speakers = [
-{name:"DANIELLE FEINBERG",
- background:"url(images/DANIELLE.png)",
+{
+	name:"DANIELLE FEINBERG",
+	desc: "Director of Photography, Pixar",
+	background:"url(images/DANIELLE.png)",
  },
 
 { name:"RAVI SUBRAMANIYAM",

@@ -6,7 +6,10 @@ function sad(el) {
         url: "https://bits-apogee.org/2018/api/events/"+$(el).parent().attr('_id')+"/",
         method: "GET",
         success: function(data) {
-            $("#fl_desc").html(data.content);
+            if(data.content_rich == "NA")
+                $("#fl_desc").html(data.content);
+            else
+                $("#fl_desc").html(data.content_rich);
             $("#fl_rules").html(data.detail_rules + '<a href="./Rules_booklet.pdf" id="pdf">Download rules booklet</a>');
             $("#fl_contact").html(data.contact);
             // $("#category").html(data.category_name);
