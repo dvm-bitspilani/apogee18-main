@@ -43,12 +43,15 @@
 #head label:nth-child(2) { color: #07fe8d; margin-top: 5px; }
 
 #content {
-	width: 90%;
+	width: 100%;
 	max-width: 700px;
 	color: #fff;
 	text-align: center;
-	max-height: 70vh;
-	overflow-y: auto;
+	max-height: 50vh;
+    overflow-y: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
 #content p {
@@ -66,6 +69,27 @@
 		height: 100px;
 		font-size: 75px;
 	}
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 275px;
+    margin: 5px 0;
+}
+
+.product .imgs {
+    display: flex;
+    flex-direction: row;
+}
+
+.product .img {
+    width: 225px;
+    height: 225px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
 }
             </style>
         </head>
@@ -90,8 +114,22 @@
                     </div>
                     <div id="content">
                         <p>
-                            Coming Soon...
+                            * These can be bought on campus. Online order facility coming soon.
                         </p>
+                        <div class="product">
+                            <div class="imgs">
+                                    <div class="img" style="background-image: url(images/T3.jpg)"></div>
+                                    <div class="img" style="background-image: url(images/T1.jpg)"></div>
+                            </div>
+                            <!-- <div class="btn">Buy Now</div> -->
+                        </div>
+                        <div class="product">
+                            <div class="imgs">
+                                    <div class="img" style="background-image: url(images/T4.jpg)"></div>
+                                    <div class="img" style="background-image: url(images/T2.jpg)"></div>
+                            </div>
+                            <!-- <div class="btn">Buy Now</div> -->
+                        </div>
                     </div>
                 </div>
             </section>

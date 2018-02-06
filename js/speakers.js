@@ -1,13 +1,19 @@
 var speakers = [
-{name:"DANIELLE FEINBERG",
- background:"url(images/DANIELLE.png)",
+{
+	name:"DANIELLE FEINBERG",
+	desc: "Director of Photography, Pixar",
+	background:"url(images/DANIELLE.png)",
  },
 
-{ name:"RAVI SUBRAMANIYAM",
+{
+	name:"RAVI SUBRAMANIYAM",
+	desc: "Bestselling Thriller Author",
   background:"url(images/RAVSUB.png)",
 },
 
-{ name:"VASU PREMLANI",
+{
+	name:"VASU PREMLANI",
+	desc: "Stand-up comedian and Environmentalist",
   background:"url(images/VASU.png)",
 },
 
