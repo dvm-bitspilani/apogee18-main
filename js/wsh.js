@@ -1,27 +1,27 @@
 var workshops = [
 {name:"SDIOT",
- background:"url(images/Mitrabot2.png)",
+ background:"url(img/sdiot.png)",
  },
 
 { name:"BIGDATA",
-  background:"url(images/naoBot.png)",
+  background:"url(img/bdata.png)",
 },
 
 { name:"IOT",
-  background:"url(images/puzzlebox.png)",
+  background:"url(img/iot.png)",
 },
 
 { name:"ANSYS",
-  background:"url(images/mitraBot.png)",
+  background:"url(img/ansys.png)",
 },
 { name:"CLOUD COMPUTING",
-  background:"url(images/naobot.png)",
+  background:"url(img/cloud.png)",
 },
 { name:"BSE Trading",
-  background:"url(images/mitraBot2.png)",
+  background:"url(img/bse.png)",
 },
 { name:"IMPACTLABS",
-  background:"url(images/naoBot2.png)",
+  background:"url(images/imlab.jpg)",
 },
 
 
@@ -31,7 +31,7 @@ var string = "";
 workshops.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimage' style='background:" + el.background + "'>\
+			      <div class='wsimage' style='background:" + el.background + ";background-size:contain'>\
 			      </div>\
 			      <div  class='wstltWK' id=" + ++i + "><p id="+ ++i + ">" + el.name +"\
 			      </p></div>\
@@ -163,3 +163,4 @@ $("#boxcontainer").fadeIn(1000) ;
 
 // var desc1 = document.querySelector(".desc");
 // var n = document.querySelectorAll(".banda").length;
+

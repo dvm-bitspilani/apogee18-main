@@ -79,17 +79,24 @@ cursor: pointer;
 }
 
 .wsimage,.wsimageSPKR{
-/*	height: 226px;*/
+	height: 226px;
 	width: 221px;
-	
+	background-size:contain;
 /*	border:5px solid ;*/
 
 }
-
+.wsimage
+{
+background-position: 0px 0px;
+background-size: contain;
+}
 .wsimageSPKR
 {
 height:226px;
 background-color: url(./images/GRADIENT.png);
+background-position: 0px 0px;
+background-size: contain;
+
 }
 .wsimageEVT
 {
@@ -215,10 +222,10 @@ height:45px;
 .wstltWK
 {
 
-	background: #272323;
+    background: #272323;
     display: flex;
     width: 100%;
-    height: 226px !important;
+
 }
 .wstltWK p
 {font-size: 1.5rem;
