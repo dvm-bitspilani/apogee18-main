@@ -226,3 +226,7 @@
     color: #fff;
     text-decoration: none;
 }
+
+#fl_rules p span {
+    color: #fff !important;
+}
