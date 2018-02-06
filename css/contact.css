@@ -32,7 +32,7 @@
 	color: #fff;
 	text-align: center;
 	max-height: 70vh;
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	min-height: 350px;
 }
 
@@ -46,7 +46,7 @@
     display: flex;
     overflow-x: hidden;
     position: relative;
-    height: 300px;
+    height: 200px;
     width: calc(100% - 40px);
     margin: 10px;
     padding: 0;
@@ -59,13 +59,13 @@
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-    min-width: 300px;
-    height: calc(100% - 40px);
-    margin: 0 20px;
-    float: left;
-    /* transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1); */
-    cursor: pointer;
-    /* position: relative; */
+	min-width: 300px;
+	height: calc(100%);
+	margin: 0 20px;
+	float: left;
+	/* transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1); */
+	cursor: pointer;
+	/* position: relative; */
 }
 @media all and (max-width: 500px) {
 	#bande {
