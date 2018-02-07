@@ -32,9 +32,8 @@ exhibitions.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
 			      <div class='wsimageEVT' id=" + ++i + " style='background:" + el.background + "'>\
-			      <p  class='wstltEVT' id=" + ++i + " >" + el.name +"\
+			      <p  class='wstltEVT' id=" + i + " >" + el.name +"\
 			      </div>\
-			      </p>\
 			      </div>\
 		</div>"
 })

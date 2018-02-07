@@ -31,10 +31,9 @@ var string = "";
 workshops.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <div class='wsimage' style='background:" + el.background + ";background-size:contain'>\
+			      <div class='wsimage' id=" + ++i + " style='background:" + el.background + ";background-size:contain'>\
 			      </div>\
-			      <div  class='wstltWK' id=" + ++i + "><p id="+ ++i + ">" + el.name +"\
-			      </p></div>\
+			       <p  class='wstltWK' id=" + i + " >" + el.name +"\
 			      </div>\
 		</div>"
 })
@@ -134,6 +133,7 @@ function closebox(){
 // function nm(){
 	 
     $(".wstltWK").click(openinfo);
+     $(".wsimage").click(openinfo);
     function openinfo(e){
     console.log($(e.target).attr('id'));
     var box = $(e.target).attr('id');

@@ -217,28 +217,23 @@ height:45px;
 	margin-top: 3px;
 	z-index: 1000;
 }
+.disclaimer
+{
+margin-top: -68vh;
+}
 
 }
 .wstltWK
 {
 
     background: #272323;
-    display: flex;
     width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
 
 }
-.wstltWK p
-{font-size: 1.5rem;
-	color: #fff;
-	margin:auto;
-}
+
 label{
 	text-align: center;
-}
-@media only screen and (max-width:700px)
-{
-.disclaimer
-{
-margin-top: -68vh;
-}
 }
