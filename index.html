@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/loader.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/ham.css">
     <title>APOGEE 2018</title>
 </head>
 <body>
@@ -45,8 +46,35 @@
                 <li onclick="navigate('http://www.bits-apogee.org/2018/registrations')">REGISTER</li>
                 <li onclick="navigate('sponsors.html')" class="link">SPONSORS</li>
             </ul>
-            <div id="tapformenu" class="logo">TAP LOGO FOR MENU</div>
+            <div id="tapformenu" class="logo" style="display: none">TAP LOGO FOR MENU</div>
+            <div id="ham" onclick="showMenu()"></div>
         </header>
+        <section id="hammenu">
+            <div id="back" onclick="hideMenu()"></div>
+            <div id="hamcont">
+                <ul>
+                    <li onclick="navigate('about.html')">ABOUT</li>
+                    <li onclick="navigate('events.html')">EVENTS</li>
+                    <li onclick="navigate('contact.html')">CONTACT US</li>
+                    <li onclick="navigate('http://www.bits-apogee.org/2018/registrations')">REGISTER</li>
+                    <li onclick="navigate('sponsors.html')" class="link">SPONSORS</li>
+                </ul>
+                <ul>
+                    <li onclick="navigate('store.html')">OFFICIAL MERCHANDISE STORE</li>
+                    <li onclick="navigate('speakers.html')">SPEAKERS</li>
+                    <li onclick="navigate('exhibitions.html')">EXHIBITIONS</li>
+                    <li onclick="navigate('workshops.html')">WORKSHOPS</li>
+                    <li onclick="navigate('hackathons.html')">HACKATHONS</li>
+                    <!-- <li><span class='top'>.</span><span class="base">.</span></li> -->
+                </ul>
+                <ul>
+                    <li onclick="navigate('https://twitter.com/bitsapogee?lang=en')">TWITTER</li>
+                    <li onclick="navigate('https://www.youtube.com/watch?v=wVBO2qEUpck')">YOUTUBE</li>
+                    <li onclick="navigate('https://www.facebook.com/bitsapogee/')">FACEBOOK</li>
+                    <li onclick="navigate('https://www.instagram.com/bitsapogee/')">INSTAGRAM</li>
+                </ul>
+            </div>
+        </section>
         <section class="middlesection">
             <div class="Title">
                 <p class="line1">THE ANNUAL </p>
@@ -96,7 +124,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/basic.js"></script>
-
+<script src="js/ham.js"></script>
 <script src="js/loader.js"></script>
 <script src="js/timer.js"></script>
 
