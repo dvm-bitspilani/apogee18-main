@@ -1,6 +1,6 @@
 var hackathons = [
 {name:"IBM Online Hackathon",
- background:"url(images/Mitrabot2.png)",
+ background:"url(images/hack1.jpg)",
  },
 
 
