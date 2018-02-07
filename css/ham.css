@@ -4,7 +4,7 @@
     display: none;
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: 10px;
     background: url("../img/ham.svg") no-repeat center;
     background-size: contain;
 }
@@ -14,7 +14,7 @@
     background: url("../img/hamback.svg") no-repeat center;
     background-size: cover;
     top: calc(25px + 16px);
-    left: calc(25px + 16px);
+    left: calc(10px + 16px);
 }
 
 @media all and (max-width: 650px) {
