@@ -42,53 +42,25 @@ document.getElementById("wscontainer").innerHTML = string;
 
 var workshop_info = [
 {name:"1",
- info:"<b style='font-size:1.25em'>Proposal for Aeromodelling Boot camp: with FPV Drone.</b>\
-   <br/><br/> <b style='font-size:1.25em'> ABOUT US</b> <br/><br/>SDIoT is the most exclusive, invitation-only, network of high-caliber tech enthusiast who wants to make themark in the field of Smart Devices and Internet of Things. We lead our tech buddy on their technologicaltransformation, providing innovative next-generation technology solutions and services that leverage deepindustry expertise and an extensive partner community. ",
+ info:"\
+   <br/><br/> <b style='font-size:1.25em'>ABOUT US</b> <br/><br/>SDIoT is the most exclusive, invitation-only, network of high-caliber tech enthusiast who wants to make themark in the field of Smart Devices and Internet of Things. We lead our tech buddy on their technologicaltransformation, providing innovative next-generation technology solutions and services that leverage deepindustry expertise and an extensive partner community. <br/><br/><b style='font-size:1.25em'>Videos to Watch</b><br><a style='color:white' href=\"https://www.youtube.com/watch?v=1Cdq2R6oxII&t=2s\" target=\"_blank\">BITS Pilani video APOGEE 17</a><br><a style='color:white' href=\"https://www.youtube.com/watch?v=MtG-dwjILsU&t=27s\" target=\"_blank\">FeedBack video</a><br><a style='color:white' href=\"https://www.youtube.com/watch?v=XNCqcjIpwTw\" target=\"_blank\">IoT Demo</a><br><br><b style='font-size:1.25em'>Documents</b><br><a style='color:white' href=\"workshops/sdiot.pdf\" target=\"_blank\">SDIoT</a>",
 },
 
 { name:"2",
-  info:"<b style='font-size:2em'>Will be updated soon</b>",
+  info:"<b style='font-size:2em'>BIG DATA &mdash; HADOOP Workshop Details</b><br><br>This workshop on BIG DATA &mdash; HADOOP will cover RDBMS Basics, File &amp; Tablespace management, Big Data concepts, Basic HADOOP concepts, HADOOP distributed file system and a dedicated doubt session. Please refer to the PDF below for more details.<br><br><a style='color:white' href=\"workshops/hadoop.pdf\" target=\"_blank\">HADOOP WORKSHOP DETAILS</a>",
 },
 
 { name:"3",
-  info:"<b style='font-size:1.5em'>2-DAY WORKSHOP ON IOT</b> \
-        <br/><br/><b style=' font-size:1.25em;text-decoration:underline'>Session: 1. Introductions To Industrial IOT</b>\
-        <br/><br/><span style='text-align:right'> Introduction Of Industrial IOT.</span>\
-        <br/><span style='text-align:right'> Classification Of Industrial IOT.</span>\
-        <br/><span style='text-align:right'> History Of Automation.</span>\
-        <br/><span style='text-align:right'> Scope Of Industrial IOT.</span>\
-        <br/><span style='text-align:right'> Career Prospects of IOT.</span>\
-         <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 2. Introductions To Controlling Devices</b>\
-        <br/><br/><span style='text-align:left'> Relay And Electrical Control.</span>\
-        <br/><span style='text-align:left'> Electronic Controller And Pid Controller.</span>\
-        <br/><span style='text-align:left'> Programmable Logic Controller (Plc).</span>\
-        <br/><span style='text-align:left'> Scada (Tools & Usage)</span>\
-         <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 3. Exposure To Relay System</b>\
-        <br/><br/><span style='text-align:left'> Introduction Of Industrial IOT.</span>\
-        <br/><span style='text-align:left'> Relay Based Control System</span>\
-        <br/><span style='text-align:left'> Switching Theory.</span>\
-        <br/><span style='text-align:left'> Introduction To Timer And Counter.</span>\
-        <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 4.Introduction To PLC</b>\
-        <br/><br/><span style='text-align:left'> Hardware Architecture.</span>\
-        <br/><span style='text-align:left'> Advantage Over Other Controller.</span>\
-        <br/><br/><b style='font-size:1.25em;text-decoration:underline'>Session: 5. Query & Doubt Clearance Session</b>\
-        <br/><br/><span style='text-align:left'> Query & Doubt Clearance Session.</span>\
-        <br/><span style='text-align:left'> Competition Based On Industrial</span>\
-        <br/><span style='text-align:left'> Q & A Session</span>\
-        <br/><span style='text-align:left'> Awards & Certificates Of Honour To Winners.</span>\
-        <br/><span style='text-align:left'> Certificates Of Appreciation To Selected Participants.</span>\
-        <br/><span style='text-align:left'> Certificates Of Participation To All Participants.</span>",
+  info:"<b style='font-size:2em'>IoT Workshop Details</b><br><br>This workshop on Internet of Things will cover Industrial IoT introduction, controlling devices, Relay systems, PLC and a dedicated doubt session. Please refer to the PDF below for more details.<br><br><a style='color:white' href=\"workshops/iot.pdf\" target=\"_blank\">IoT WORKSHOP DETAILS</a>",
  },
 
 { name:"4",
-  info:" <b style='font-size:1.25em'>2-DAY WORKSHOP ON ANSYS\
-        <br/><br/>For more information see the pdf\
-        <br/> <a href='./extras/ANSYS.pdf'> more info</a>",
+  info:"<b style='font-size:2em'>ANSYS Workshop Details</b><br><br>This workshop will cover multiple topics over seven sessions. Please refer to the PDF below for more details.<br><br><a style='color:white' href=\"extras/ANSYS.pdf\" target=\"_blank\">IoT WORKSHOP DETAILS</a>",
 },
 { name:"5",
-  info:"<b style='font-size:1.25em'>2-DAY WORKSHOP ON CLOUD COMPUTING BY CETPA\
-        <br/><br/>For more information see the pdf\
-        <br/> <a href='./extras/Cloud Computing.pdf'> more info</a>",
+  info:"<b style='font-size:1.25em'>CLOUD COMPUTING BY CETPA\
+        <br/><br/>This workshop will cover multiple topics over seven sessions. Please refer to the PDF below for more details.\
+        <br/> <a style='color:white' target='_blank' href='./extras/Cloud Computing.pdf'>CLOUD COMPUTING WORKSHOP DETAILS</a>",
 },
 { name:"6",
   info:'<b>DALAL STREET EXCLUSIVE</b>\
