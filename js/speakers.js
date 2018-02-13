@@ -4,7 +4,11 @@ var speakers = [
 	desc: "Director of Photography, Pixar",
 	background:"url(images/DANIELLE.png)",
  },
-
+ {
+	name:"DAVID STORK",
+	desc: "Distinguished Research Scientist",
+  background:"url(images/DAVID.png)",
+},
  {
 	name:"VASU PREMLANI",
 	desc: "Stand-up comedian and Environmentalist",
@@ -23,17 +27,7 @@ var speakers = [
   background:"url(images/SUDHA.jpg)",
 },
 
-{
-	name:"GURMEHAR KAUR",
-	desc: "Indian Student Activist",
-  background:"url(images/GURMEHAR.jpg)",
-},
 
-{
-	name:"DAVID STORK",
-	desc: "Distinguished Research Scientist",
-  background:"url(images/DAVID.png)",
-},
 
 {
 	name:"ABHISHEK SYAL",
@@ -93,6 +87,11 @@ var speakers = [
 	name:"MANASI KIRLOSKAR",
 	desc: "",
   background:"url(images/MANASI.jpg)",
+},
+{
+	name:"GURMEHAR KAUR",
+	desc: "Indian Student Activist",
+  background:"url(images/GURMEHAR.jpg)",
 },
 
 ]
