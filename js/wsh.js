@@ -39,11 +39,43 @@ workshops.forEach((el, i)=>{
 })
 
 document.getElementById("wscontainer").innerHTML = string;
-
+document.getElementById("wscontainer").style.textAlign = "justified";
 var workshop_info = [
 {name:"1",
  info:"\
-   <br/><br/> <b style='font-size:1.25em'>ABOUT US</b> <br/><br/>SDIoT is the most exclusive, invitation-only, network of high-caliber tech enthusiast who wants to make themark in the field of Smart Devices and Internet of Things. We lead our tech buddy on their technologicaltransformation, providing innovative next-generation technology solutions and services that leverage deepindustry expertise and an extensive partner community. <br/><br/><b style='font-size:1.25em'>Videos to Watch</b><br><a style='color:white' href=\"https://www.youtube.com/watch?v=1Cdq2R6oxII&t=2s\" target=\"_blank\">BITS Pilani video APOGEE 17</a><br><a style='color:white' href=\"https://www.youtube.com/watch?v=MtG-dwjILsU&t=27s\" target=\"_blank\">FeedBack video</a><br><a style='color:white' href=\"https://www.youtube.com/watch?v=XNCqcjIpwTw\" target=\"_blank\">IoT Demo</a><br><br><b style='font-size:1.25em'>Documents</b><br><a style='color:white' href=\"workshops/sdiot.pdf\" target=\"_blank\">SDIoT - IoT</a><br><a style='color:white' href=\"workshops/sdiot2.pdf\" target=\"_blank\">SDIoT - FPV Drone</a>",
+   <br/><br/><b>Day-1 Session-1 (Theory)</b><br>\
+▣ Physics of flying<br>\
+▣ Aeromodeling overview with demo on<br>\
+▣ Control Surfaces -- Airplane<br>\
+▣ Control Systems -- Drone<br>\
+<b>Day-1 Session-2 (Hands-on)</b><br><br>\
+▣ Best practice to build and fly<br>\
+▣ Get familiar with drone parts<br>\
+▣ Their use and functioning<br>\
+▣ Radio controller<br><br>\
+<b>Day-1 Session-3 (Hands-on)</b><br>\
+▣ Simulator session: Learn how to fly multirotors.<br>\
+▣ Live drone flight demonstration<br>\
+▣ Indoor Flying Experience with Tiny Whoops<br/><br>\
+<b>Day-2 Session-4 (Hands-on)</b><br><br>\
+▣ Simulator session: Learn how to fly multirotors.<br>\
+▣ Live drone flight demonstration<br>\
+▣ Indoor Flying Experience with Tiny Whoops<br>\
+▣ Building & flying self-built drone:<br>\
+ (Trainer will perform a live drone build)<br>\
+▣ Using IAP to flash firmware on flight controller<br>\
+▣ Spares Integration and Calibration<br>\
+▣ Before flight check-ups<br>\
+Day-2 Session-5 (Projects)<br><br>\
+▣ Telemetry Radio and RC Transmitter Setup<br>\
+▣ Preparing drone for crash scenarios<br>\
+▣ Best flying practices ( 3-mistakes high)<br>\
+Day-2 Session-6 (Wrap-up)<br><br>\
+▣ SDIoT DIY Project Demos<br>\
+▣ Virtual Reality<br>\
+▣ Drone Airshow (With drone built during session)<br>\
+and #SkySelfie for Participants<br>\
+▣ Awards Ceremony<br><br><br><b style='font-size:1.25em'>Videos to Watch</b><br><a style='color:white' href=\"https://www.youtube.com/watch?v=1Cdq2R6oxII&t=2s\" target=\"_blank\">BITS Pilani video APOGEE 17</a><br><a style='color:white' href=\"https://www.youtube.com/watch?v=MtG-dwjILsU&t=27s\" target=\"_blank\">FeedBack video</a><br><br><br><b style='font-size:1.25em'>Documents</b><br><br><a style='color:white' href=\"workshops/sdiot2.pdf\" target=\"_blank\">SDIoT - FPV Drone</a>",
 },
 
 { name:"2",
