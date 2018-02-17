@@ -135,24 +135,24 @@ engineering.<br><br>\
 Talk and demonstrate working in Nano-machine lab How to build in Nano-Lab, conceptual and\
 embodiment design, use of tools, safety precautions, use of creative innovation, psychological inertias.<br><br>\
 <b>Day 1: Session 3: 1⁄2 hour:</b><br><br>\
-students form groups & get kits (3 in a group). Small break included.\
+students form groups & get kits (3 in a group). Small break included.<br><br>\
 <b>Day 1: Session 4: 2 hours:</b><br><br>\
-Design & prototyping of Nano-LED lighted preset-torque generating screwdriver for night repair.\
+Design & prototyping of Nano-LED lighted preset-torque generating screwdriver for night repair.<br><br>\
 <b>Day 1 : Session 5: 3 hours:</b><br><br>\
 design & build portable, low-cost, folding 2D microscope with nano-LED for detecting malaria and other\
 diseases through blood samples (project with support of its inventor, Dr Tunde, PhD(MIT), Co-founder,\
 ImpactLabs MIT, MIT)\
-Total 7 and 1⁄2 hours<br>\
+Total 7 and 1⁄2 hours<br><br>\
 <b>Kit includes:</b><br><br>\
 Nano-LED (0.8mm) daylight prewired, SMD LED (less than 0.5mm), mini batteries of 3V each, printed\
 sheet for microscope, a tiny borosilicate (glass) ball to act as lens, nano-LED circuit, switch, drill bit,\
 hardeners, hot melt adhesive.<br><br>\
 <b>The Faculty:</b><br><br>\
-Saurabh Kwatra, is currently Expert, Smart Growth Operational Programme , European Commission\
-(2014-20), National Centre for Research and Development ,Warszawa, Ministry of Science & Higher\
-Education, Poland\
-Facilitator, MIT ImpactLabs Summer Workshop, MIT.\
-Workshop coordinated by: Palak Surana : Energy Access Practitioner Network, UN Foundation",
+Saurabh Kwatra, is currently Expert, Smart Growth Operational Programme , European Commission (2014-20),<br> \
+National Centre for Research and Development, Warszawa,<b>Ministry of Science & Higher\
+Education, Poland<b><br>\
+Facilitator, MIT ImpactLabs Summer Workshop, MIT.<br>\
+Workshop coordinated by: Palak Surana : Energy Access Practitioner Network, UN Foundation<br>",
 },
 
 
