@@ -1,17 +1,21 @@
 var hackathons = [
-{name:"IBM Online Hackathon",
- background:"url(images/hack1.jpg)",
- },
-
-
-
+{
+	name:"IBM Online Hackathon",
+	background:"url(images/hack1.jpg)",
+	url: "https://www.bits-apogee.org/ibmhackathon"
+},
+{
+	name:"Exxon Mobil Hackathon",
+	background:"url(images/exxon.jpg)",
+	url: "https://www.bits-apogee.org/exxonmobil"
+}
 ]
 
 var string = "";
 hackathons.forEach((el, i)=>{
 	string += "<div class='ws' >\
 	           <div class='wsi'>\
-			      <a style = 'text-decoration:none;' href = 'https://www.bits-apogee.org/ibmhackathon'><div class='wsimage' style='background:" + el.background + "'>\
+			      <a style = 'text-decoration:none;' href = '"+el.url+"' target='_blank'><div class='wsimage' style='background:" + el.background + "; background-position: center; background-size: contain'>\
 			      </div>\
 			      <div  class='wstltWK' id=" + ++i + "><p id="+ ++i + ">" + el.name +"\
 			      </p></div></a>\
